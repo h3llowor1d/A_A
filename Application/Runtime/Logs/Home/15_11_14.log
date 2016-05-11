@@ -1,0 +1,595 @@
+[ 2015-11-14T00:00:15+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011394s ]
+
+[ 2015-11-14T00:00:16+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0011s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011667s ]
+
+[ 2015-11-14T00:21:58+08:00 ] 5.178.86.75 http://check.best-proxies.ru/azenv.php?auth=144743171743&a=PSCN&i=2032797741&p=80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载控制器:Azenv.php
+
+[ 2015-11-14T00:27:19+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011043s ]
+
+[ 2015-11-14T02:19:44+08:00 ] 203.208.60.160 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2015-11-14T02:19:45+08:00 ] 203.208.60.148 /index.php/Blog/list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: date /data/A_A/Application/Home/Controller/BlogController.class.php 第 93 行.
+NOTIC: [8] Undefined index: key /data/A_A/Application/Home/Controller/BlogController.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  ORDER BY a.addtime desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT a.*,u.nickname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  ORDER BY a.addtime desc LIMIT 2,2   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/5d559d01fe4a8d445307a8b4a5a09885.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010559s ]
+
+[ 2015-11-14T02:57:49+08:00 ] 61.135.190.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011774s ]
+
+[ 2015-11-14T03:19:25+08:00 ] 154.87.1.102 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011794s ]
+
+[ 2015-11-14T04:04:15+08:00 ] 111.20.248.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011528s ]
+
+[ 2015-11-14T04:04:15+08:00 ] 111.20.248.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011735s ]
+
+[ 2015-11-14T04:57:04+08:00 ] 61.135.190.71 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011333s ]
+
+[ 2015-11-14T06:15:49+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012199s ]
+
+[ 2015-11-14T08:38:45+08:00 ] 61.135.190.198 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011296s ]
+
+[ 2015-11-14T09:08:59+08:00 ] 61.160.213.110 http://zc.qq.com/chs/index.html?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载控制器:Chs
+
+[ 2015-11-14T09:10:58+08:00 ] 5.178.86.75 http://check.best-proxies.ru/azenv.php?auth=144746345861&a=PSCN&i=2032797741&p=80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载控制器:Azenv.php
+
+[ 2015-11-14T09:45:26+08:00 ] 61.135.190.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011191s ]
+
+[ 2015-11-14T10:33:28+08:00 ] 183.60.48.25 http://www.baidu.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011313s ]
+
+[ 2015-11-14T10:36:43+08:00 ] 121.42.0.33 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011420s ]
+
+[ 2015-11-14T14:30:41+08:00 ] 114.221.203.88 http://www.baidu.com
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011796s ]
+
+[ 2015-11-14T15:00:21+08:00 ] 61.135.190.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011512s ]
+
+[ 2015-11-14T15:38:22+08:00 ] 61.135.190.198 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011773s ]
+
+[ 2015-11-14T17:38:08+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011814s ]
+
+[ 2015-11-14T17:38:08+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011357s ]
+
+[ 2015-11-14T18:33:20+08:00 ] 183.60.48.25 http://www.baidu.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011601s ]
+
+[ 2015-11-14T19:32:37+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011580s ]
+
+[ 2015-11-14T19:32:37+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011674s ]
+
+[ 2015-11-14T19:44:48+08:00 ] 91.196.50.33 http://testp3.pospr.waw.pl/testproxy.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+ERR: 无法加载控制器:Testproxy.php
+
+[ 2015-11-14T20:45:53+08:00 ] 61.135.190.69 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011605s ]
+
+[ 2015-11-14T22:03:33+08:00 ] 61.135.190.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011372s ]
+
+[ 2015-11-14T23:39:13+08:00 ] 171.208.221.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011802s ]
+
+[ 2015-11-14T23:56:30+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012313s ]
+

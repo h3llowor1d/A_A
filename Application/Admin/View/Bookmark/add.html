@@ -1,0 +1,83 @@
+<style>
+    .form-zh .required{
+        color: red;
+        font-size: 20px;
+    }
+
+    .form-zh .control-label{
+        text-align: center;
+    }
+
+</style>
+<div class="theme-showcase" style="width: 80%;margin: 10px;" role="main">
+    <div class="panel form-zh" style="padding: 20px;">
+        <div class="form-group form-group-sm" style="height: 40px;line-height: 40px;">
+            <span class="required">*</span>
+            <label class="col-sm-1 control-label" style="text-align: center">标题</label>
+            <div class="col-sm-10">
+                <input type="text" id="title" class="form-control">
+            </div>
+        </div>
+        <div class="form-group" style="height: 40px;line-height: 40px;">
+            <label class="col-sm-1 control-label">分类</label>
+            <div class="col-sm-10">
+                <select class="form-control">
+                    <volist name="types" id="t">
+                        <option value="{$t.id}">{$t.typename}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-group form-group-sm margin-t-15" style="min-height: 30px;">
+            <label class="col-sm-1 control-label">配图</label>
+
+            <div class="col-sm-11">
+                <div id="uploader-demo">
+                    <!--用来存放item-->
+                    <div id="fileList" class="uploader-list"></div>
+                    <div id="filePicker">选择图片</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-group-sm margin-t-15">
+            <label class="col-sm-1 control-label">内容</label>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <input type="hidden" id="imgurl" value="">
+            <textarea id="desc" style="display: none;" name="desc"></textarea>
+            <div class="col-md-12" style="width: 1200px;"><input type="button" id="add" class="center-block btn btn-info" value="提交"></div>
+        </div>
+
+    </div>
+</div>
+<script src="__JS__/uploader.js"></script>
+<script>
+    $("#add").on('click',function(){
+        var title = $.trim($("#title").val());
+        if(title == ""){
+            notice("标题不能为空");
+            return false;
+        }
+
+        if($.trim(UE.getEditor('ueditor').getContentTxt()) === ""){
+            notice('内容不能为空');
+            return false;
+        }
+        var desc = UE.getEditor('ueditor').getContentTxt();
+
+        $.post("/Admin/Artical/add",{
+            tid : '{$tdata.id}',
+            desc :desc,
+            title :title,
+            img:$("#imgurl").val(),
+            content:UE.getEditor('ueditor').getContent()
+        },function(data){
+            if(data.status == 0){
+                notice("添加成功",true,'/Admin/Artical/qianyi/t/{$tdata.id}');
+            }
+        },"JSON");
+
+        return false;
+    });
+</script>

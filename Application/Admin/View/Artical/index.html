@@ -1,0 +1,155 @@
+
+<if condition="!$data_exist">
+    <div class="theme-showcase" style="width: 80%;margin: 10px;" role="main">
+        <div class="panel" style="padding: 20px;">
+            <div class="form-group form-group-sm" style="height: 40px;line-height: 40px;">
+                <label class="col-sm-1 control-label">标题</label>
+                <div class="col-sm-11">{$tdata.typename}</div>
+            </div>
+            <div class="form-group form-group-sm margin-t-15" style="min-height: 30px;">
+                <label class="col-sm-1 control-label">配图</label>
+
+                <div class="col-sm-11">
+                    <div id="uploader-demo">
+                        <!--用来存放item-->
+                        <div id="fileList" class="uploader-list"></div>
+                        <div id="filePicker">选择图片</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-group-sm margin-t-15">
+                <label class="col-sm-1 control-label">内容</label>
+                <div style="clear: both;"></div>
+            </div>
+            <div style="margin-bottom: 30px;">
+                <script id="ueditor" style="height:500px;width:1200px;" name="content"></script>
+                <input type="hidden" id="imgurl" value="">
+                <textarea id="desc" style="display: none;" name="desc"></textarea>
+                <div class="col-md-12" style="width: 1200px;"><input type="button" id="add" class="center-block btn btn-info" value="提交"></div>
+            </div>
+
+        </div>
+    </div>
+<else/>
+    <div class="theme-showcase" style="width: 80%;margin: 10px;" role="main">
+        <div class="panel" style="padding: 20px;">
+            <div id="pTitle" class="form-group form-group-sm" style="height: 40px;line-height: 40px;">
+                <label class="col-sm-1 control-label">标题</label>
+                <div class="col-sm-10">
+                    <div><span>{$tdata.typename}</span></div>
+                </div>
+                <div class="col-sm-1">
+                    <a href="javascript:;" class="btn btn-primary" onclick="update()">编辑</a>
+                </div>
+            </div>
+            <div class="form-group form-group-sm margin-t-15">
+                <label class="col-sm-1 control-label">配图</label>
+                <div id="uploader-demo col-sm-11">
+                    <!--用来存放item-->
+                    <div id="fileList" class="uploader-list"></div>
+                    <div id="filePicker" style="display: none">更换图片</div>
+                    <div id="imgDiv" class="file-item thumbnail1">
+                        <img style="height: 200px;width:auto;" src="{$data.img}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-group-sm margin-t-15">
+                <label class="col-sm-1 control-label">内容</label>
+                <div style="clear: both;"></div>
+                <div id="content" style="margin: 20px;">{$data.content|htmlspecialchars_decode}
+                </div>
+            </div>
+            <div id="updateDiv" style="display: none;margin: 20px;width: 1200px;">
+                <script id="ueditor" style="height:500px;" name="content"></script>
+                <input type="hidden" id="imgurl" value="{$data.imgr}">
+                <div class="col-md-12"><input type="submit" id="submit" class="center-block btn btn-info" value="保存"></div>
+            </div>
+        </div>
+    <div style="height: 30px;"></div>
+</if>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    提示信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                更新成功
+            </div>
+            <div class="modal-footer">
+                <button id="shutdown" type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script src="__YC__/js/uploader.js"></script>
+<script>
+    $(function(){
+        if(!{$data_exist}){
+            var ue = UE.getEditor('ueditor',{
+                initialFrameWidth:1200,
+                elementPathEnabled:false
+            });
+        }
+
+    });
+
+    var update = function(){
+        $("#content").hide();
+        $("#filePicker").show();
+        $("#updateDiv").show();
+        var ue = UE.getEditor('ueditor',{
+            initialFrameWidth:1200,
+            elementPathEnabled:false
+        });
+
+        ue.addListener('ready',function(){
+            ue.setContent($("#content").html());
+        });
+    }
+
+    $("#submit").on('click',function(){
+        if(UE.getEditor('ueditor').getContentTxt() === ""){
+            notice('内容不能为空');
+            return false;
+        }
+        var desc = UE.getEditor('ueditor').getContentTxt();
+        $.post("/Admin/Artical/update",{
+            id:'{$data.id}',
+            desc :desc,
+            img:$("#imgurl").val(),
+            content:UE.getEditor('ueditor').getContent()
+        },function(data){
+            if(data.status == 0){
+                notice("更新成功",true);
+            }
+        },"JSON");
+    });
+
+    $("#add").on('click',function(){
+        if($.trim(UE.getEditor('ueditor').getContentTxt()) === ""){
+            notice('内容不能为空');
+            return false;
+        }
+        var desc = UE.getEditor('ueditor').getContentTxt();
+        $.post("/Admin/Artical/add",{
+            tid : '{$tdata.id}',
+            desc :desc,
+            img:$("#imgurl").val(),
+            content:UE.getEditor('ueditor').getContent()
+        },function(data){
+            if(data.status == 0){
+                notice("添加成功",true);
+            }
+        },"JSON");
+
+        return false;
+    });
+
+</script>

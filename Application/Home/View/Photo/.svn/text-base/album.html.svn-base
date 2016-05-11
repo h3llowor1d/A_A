@@ -1,0 +1,179 @@
+<div class="container">
+    <div class="jumbotron jumbotron-zh">
+        <h1>相册</h1>
+
+        <p>相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册相册</p>
+        <a href="#" id="newAlbum" class="btn btn-flat btn-info" data-toggle="modal" data-target=".bs-example-modal-lg">新建相册</a>
+    </div>
+    <!--<div class="page-header page-header-zh">
+        <ol class="breadcrumb margin-b-10">
+            <li><a href="/" class="label label-default">首页</a></li>
+            <li><a href="/Photo" class="label label-primary">相册</a></li>
+            <li><a href="/Photo/show" class="label label-success">图片</a></li>
+        </ol>
+    </div>-->
+    <div id="albumModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">新建相册</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>相册名称</label>
+                        <input type="text" class="form-control" id="albumName" placeholder="给相册取个名字">
+                    </div>
+                    <div class="form-group">
+                        <label>描述</label>
+                        <textarea class="form-control" id="albumDesc" placeholder="描述一下你的相册"></textarea>
+                    </div>
+                    <div id="albumType" class="form-group">
+                        <label>分类</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" id="submitModal" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-album">
+    <div id="albumList" class="row margin-t-20">
+        <!--<div class="col-xs-6 col-md-3 col-lg-4">
+            <div class="box box-info">
+                <div class="box-header">
+                    <h3 class="box-title text-info">相片名称1</h3>
+                    <div class="box-tools pull-right">
+                        <a href="javascript:;" class="label bg-aqua">点个赞</a>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <img class="show-img" src="/uploads/image/demo/1.jpg">
+                </div>&lt;!&ndash; /.box-body &ndash;&gt;
+                <div class="box-footer">
+                    <span class="text-warning">985+656</span>
+                </div>
+            </div>
+        </div>-->
+
+
+    </div>
+</div>
+<script src="__PUBLIC__/plugins/lazyload/lazyload.js"></script>
+<script>
+    $(function(){
+        var $albumList = $("#albumList");
+        initAlbumList();
+        //初始化相册列表
+        function initAlbumList(){
+            $.getJSON('/Photo/getAlbumList',{},function(result){
+                for(var i in result){
+                    var $outerDiv = $('<div class="col-xs-6 col-md-3 col-lg-4">'),
+                            $box = $('<div class="box box-info">'),
+                            $boxHeader = $('<div class="box-header">'),
+                            $boxTitle = $('<h3 class="box-title text-info"></h3>'),
+                            $boxTools = $('<div class="box-tools pull-right">'),
+                            $label = $('<a href="javascript:;" class="label bg-aqua">点个赞</a>'),
+                            $boxBody = $('<div class="box-body">'),
+                            $img = $('<img src="__PUBLIC__/plugins/lazyload/images/grey.gif" class="show-img lazy">'),
+                            $boxFooter = $('<div class="box-footer box-footer-zh">'),
+                            $desc = $('<span class="text-warning"></span>'),
+                            $a = $("<a></a>");
+
+                    $img.attr('original',result[i]['cover']);
+                    $boxBody.append($img);
+                    $boxTitle.html(result[i]['name']);
+                    $boxTools.append($label);
+                    $boxHeader.append($boxTitle);
+                    $boxHeader.append($boxTools);
+                    $desc.html(result[i]['desc']);
+                    $boxFooter.append($desc);
+                    $box.append($boxHeader);
+                    $box.append($boxBody);
+                    $box.append($boxFooter);
+                    $outerDiv.append($box);
+                    $a.html($outerDiv);
+                    $a.attr("href","/Photo/show/id/"+result[i]['id']);
+                    $albumList.append($a);
+                }
+                $("img.lazy").lazyload({effect: "fadeIn"});
+                //console.log(result);
+            });
+        }
+
+        //动态增加相册下拉框
+        var $newAlbum = $("#newAlbum"),
+                $albumModal = $("#albumModal");
+        $newAlbum.on('click',function(){
+            var $albumType = $("#albumType"),
+                    $select = $("<select class='form-control'></select>");
+            if($albumType.find('option').length > 0) return;
+            $.getJSON("/Photo/getAlbumType",{},function(json){
+                $select.html("");
+                for(var i in json){
+                    //console.log(new Date().getDate(),i);
+                    $select.append("<option value='" + json[i]['id'] + "'>" + json[i]['name'] + "</option>");
+                }
+                $albumType.append($select);
+            });
+        });
+
+        var $submitModal = $("#submitModal");
+        $submitModal.on('click',function(){
+            var albumName = $("#albumName").val(),
+                    albumDesc = $("#albumDesc").val(),
+                    albumType = $("#albumType select").val(),
+                    params = {name:albumName,type_id:albumType,desc:albumDesc},
+                    url = "/Photo/newAlbum";
+            $.post(url,params,function(result){
+                //新建成功处理
+                if(typeof result == 'object' && result !== null && result.status === 0){
+                    //关闭模态框，加载新增相册
+                    $albumModal.modal('hide');
+                    var $outerDiv = $('<div class="col-xs-6 col-md-3 col-lg-4">'),
+                            $box = $('<div class="box box-info">'),
+                            $boxHeader = $('<div class="box-header">'),
+                            $boxTitle = $('<h3 class="box-title text-info"></h3>'),
+                            $boxTools = $('<div class="box-tools pull-right">'),
+                            $label = $('<a href="javascript:;" class="label bg-aqua">点个赞</a>'),
+                            $boxBody = $('<div class="box-body">'),
+                            $img = $('<img class="show-img">'),
+                            $boxFooter = $('<div class="box-footer box-footer-zh">'),
+                            $desc = $('<span class="text-warning"></span>'),
+                            $a = $("<a></a>");
+
+                    $img.attr('src',result.content['cover']);
+                    $boxBody.append($img);
+                    $boxTitle.html(result.content['name']);
+                    $boxTools.append($label);
+                    $boxHeader.append($boxTitle);
+                    $boxHeader.append($boxTools);
+                    $desc.html(result.content['desc']);
+                    $boxFooter.append($desc);
+                    $box.append($boxHeader);
+                    $box.append($boxBody);
+                    $box.append($boxFooter);
+                    $outerDiv.append($box);
+                    $outerDiv.fadeIn(1000);
+                    $a.html($outerDiv);
+                    $a.attr("href","/Photo/show/id/"+result.content['id']);
+                    $albumList.append($a);
+
+                    albumName.val("");
+                    albumDesc.val("");
+                }else{
+                    //alert('1111');
+                }
+            });
+        });
+
+
+
+    });
+
+
+</script>

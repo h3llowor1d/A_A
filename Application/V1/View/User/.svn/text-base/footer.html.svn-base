@@ -1,0 +1,25 @@
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="notice" data-refresh="false" data-jump="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 400px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">
+                    提示信息
+                </h4>
+            </div>
+            <div class="modal-body" style="padding: 0">
+                <h3 style="text-align: center">保存成功</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</div> <!-- /.modal -->
+
+<script type="text/javascript" src="__JS__/notice.js"></script>
+</body>
+</html>

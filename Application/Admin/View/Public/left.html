@@ -1,0 +1,121 @@
+<aside class="left-side sidebar-offcanvas">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="/Admin">
+                    <i class="fa fa-dashboard"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Slider'">active</if>">
+                <a href="#">
+                    <i class="fa fa-picture-o"></i>
+                    <span>轮播图管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Admin/Slider"><i class="fa fa-angle-double-right"></i>轮播图列表</a></li>
+                    <li><a href="/Admin/Slider/add"><i class="fa fa-angle-double-right"></i>添加新图</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview <if condition="$activeArr['controller'] eq 'About'">active</if>">
+            <a href="#">
+                <i class="fa fa-th-large"></i>
+                <span>分类管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="/Admin/Artical"><i class="fa fa-angle-double-right"></i>文章列表</a></li>
+
+            </ul>
+            </li>
+
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Artical'">active</if>">
+                <a href="#">
+                    <i class="fa fa-phone"></i>
+                    <span>了解钱易</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <volist name="qianyi" id="item">
+                        <li><a href="/Admin/Artical/index/t/{$item.id}"><i class="fa fa-angle-double-right"></i>{$item.typename}</a></li>
+                    </volist>
+                </ul>
+            </li>
+
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Product'">active</if>">
+                <a href="#">
+                    <i class="fa fa-th"></i>
+                    <span>书签管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Admin/Bookmark"><i class="fa fa-angle-double-right"></i>书签列表</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Case'">active</if>">
+            <a href="#">
+                <i class="fa fa-list-ul"></i>
+                <span>成功案例管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <volist name="successList" id="item">
+                    <li><a href="/Admin/Artical/index/t/{$item.id}"><i class="fa fa-angle-double-right"></i>{$item.typename}</a></li>
+                </volist>
+            </ul>
+            </li>
+
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Service' OR $activeArr['controller'] eq 'Customerservice'">active</if>">
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    <span>服务支持管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Admin/Service/network"><i class="fa fa-angle-double-right"></i>服务网络</a></li>
+                    <li class="treeview <if condition="$activeArr['controller'] eq 'Customerservice'">active</if>">
+                        <a href="#">
+                            <i class="fa fa-angle-double-right"></i>
+                            <span>售后客服管理</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="/Admin/Customerservice/online"><i class="fa fa-angle-double-right"></i>在线客服</a></li>
+                            <li><a href="/Admin/Customerservice/telphone"><i class="fa fa-angle-double-right"></i>电话客服</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Admin/Service/contact"><i class="fa fa-angle-double-right"></i>联系方式</a></li>
+                </ul>
+            </li>
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Artical'">active</if>">
+            <a href="#">
+                <i class="fa fa-thumbs-up"></i>
+                <span>加盟代理管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                <volist name="joinList" id="item">
+                    <li><a href="/Admin/Artical/index/t/{$item.id}"><i class="fa fa-angle-double-right"></i>{$item.typename}</a></li>
+                </volist>
+            </ul>
+            </li>
+            <li class="treeview <if condition="$activeArr['controller'] eq 'Message'">active</if>">
+                <a href="#">
+                    <i class="fa fa-comments    "></i>
+                    <span>消息管理</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Admin/Message"><i class="fa fa-angle-double-right"></i> 消息列表</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

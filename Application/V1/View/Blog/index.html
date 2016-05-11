@@ -1,0 +1,91 @@
+
+<div class="container theme-showcase" role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-zh">
+        <h1>文章列表</h1>
+
+        <p>文章列表文章列表文章列表文章列表文章列表文章列表文章列表</p>
+    </div>
+
+    <div class="page-header">
+        <ol class="breadcrumb">
+            <li><a href="/" class="label label-default">首页</a></li>
+            <li><a href="/write" class="label label-success">写文章</a></li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <form class="form-horizontal" onsubmit="return check()" name="post" action="/Blog/post" method="post">
+                <div class="panel">
+                    <div class="form-group margin-t-15">
+                        <label class="col-sm-1 control-label">标题</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="title" name="title" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-sm">
+                        <label class="col-sm-1 control-label">标签</label>
+                        <div id="select_tags" class="col-sm-10">
+                            <volist name="tagList" id="tagItem">
+                                <a href="javascript:;" data-tagid="{$tagItem.id}" class="label margin-r-10 label-default">{$tagItem.tagname}</a>
+                            </volist>
+                            <span class="label margin-r-10 label-info">新标签</span>
+                            <input type="hidden" name="tags" value="">
+                        </div>
+                    </div>
+                </div>
+                <script id="ueditor" style="height:500px;" name="content"></script>
+                <textarea id="desc" style="display: none;" name="desc"></textarea>
+                <div class="col-md-9"><input type="submit" class="center-block btn btn-info" value="写好了，提交"></div>
+            </form>
+        </div>
+        <div class="col-md-3" style="height: 400px;background: chocolate"></div>
+    </div>
+</div>
+
+
+</div> <!-- /container -->
+<!--添加按钮-->
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/js/common.js"></script>
+<script>
+    var ue = UE.getEditor('ueditor',{
+        elementPathEnabled:false
+    });
+
+    function check(){
+        if($.trim($("#title").val()) == ''){
+            alert('标题不能为空');
+            return false;
+        }
+
+        if(UE.getEditor('ueditor').getContentTxt() === ""){
+            alert('内容不能为空');
+            return false;
+        }else{
+            $("#desc").val(UE.getEditor('ueditor').getContentTxt());
+        }
+    }
+
+    $(function(){
+        var $tags = $("#select_tags");
+        var $tagsA = $tags.find('a');
+        var $tagsInput = $tags.find('input[name=tags]');
+        var selected = new Array();
+        $tagsA.on('click',function(){
+            var tagid = $(this).attr('data-tagid'),
+                isSelected = $(this).hasClass('label-default'),
+                $self = $(this);
+            if(isSelected){
+                $self.removeClass('label-default').addClass('label-danger');
+                selected.push(tagid);
+            }else{
+                $self.removeClass('label-danger').addClass('label-default');
+                //selected.remove(tagid);
+                var index = $.inArray(tagid,selected);
+                if(index > -1) selected.splice(index,1);
+            }
+            $tagsInput.val(selected.join(','));
+        });
+    });
+
+</script>

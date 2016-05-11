@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>Lazyload图片延迟加载</title>
+        <meta name="keywords" content="Lazyload,延迟加载" />
+        <meta name="description" content="当有大量图片的时候，通过Lazyload图片加载插件，会让图片陆续加载，从而提升了页面打开速度，素材火的首页和列表页都是采用的这种方法。" />
+        <link rel="stylesheet" type="text/css" href="http://www.sucaihuo.com/jquery/css/common.css" />
+        <style>
+
+            .list .list_main {
+                margin: 15px 8px 0 8px
+            }
+
+            .list .list_main .per {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                float: left;
+                margin: 0 12px 15px 0;
+                width: 260px;
+                position: relative
+            }
+
+            .list .list_main .per:hover {
+                border-bottom: 1px solid #4ba6e5;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2)
+            }
+
+            .list .img_link {
+                height: 350px;
+                width: 260px;
+                display: block;
+                text-align: center;
+                overflow: hidden;
+                vertical-align: middle
+            }
+
+            .list .img_link img {
+                vertical-align: middle
+            }
+
+            .list .foot {
+                border-top: 1px solid #f2f2f2;
+                height: 20px;
+                padding: 0 0 10px;
+            }
+
+            .list .foot p.title {
+                height: 22px;
+                line-height: 22px;
+                margin: 4px 0 3px
+            }
+
+            .list .foot p.title a {
+                margin-left: 10px;
+                width: 242px;
+                display: block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis
+            }
+            .demo{width:850px}
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div class="head_inner">
+                <a class="logo" href="http://www.sucaihuo.com">
+                    <img alt="素材火logo" src="http://www.sucaihuo.com/Public/images/logo.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="container" id="main">
+            <h2 class="title"><a href="http://www.sucaihuo.com/js/45.html" target="_blank">超炫的弹出层效果Fancybox</a></h2>
+            <div class="demo">
+                <div class="list">
+                    <div class="list_main clearfix">
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/45.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/45/middle.jpg" alt="超炫的弹出层效果Fancybox" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/45.html" >超炫的弹出层效果Fancybox</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/43.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/43/middle.jpg" alt="jquery下利用jsonp跨域访问实现方法" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/43.html" >jquery下利用jsonp跨域访问实现方法</a> </p> 
+                            </div>                  
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/42.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/42/middle.jpg" alt="jQuery+jRange数值范围选择控件_鼠标拖动数值范围" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/42.html" >jQuery+jRange数值范围选择控件_鼠标拖动数值范围</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/41.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/41/middle.jpg" alt="jQuery页面引导插件" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/41.html" >jQuery页面引导插件</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/39.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/39/middle.jpg" alt="超炫jQuery测试答题功能" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/39.html" >超炫jQuery测试答题功能</a> </p> 
+                            </div>                 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/38.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/38/middle.jpg" alt="基于jQuery+PHP在线拍照" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/38.html" >基于jQuery+PHP在线拍照</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/36.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/36/middle.jpg" alt="基于jQuery的倒计时实现代码" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/36.html" >基于jQuery的倒计时实现代码</a> </p> 
+                            </div> 
+                            <span class="icon_recommend"></span>                    
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/35.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/35/middle.jpg" alt="PHP+jQuery根据IP定位城市" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/35.html" >PHP+jQuery根据IP定位城市</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/34.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/34/middle.jpg" alt="jQuery省市区三级联动" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/34.html" >jQuery省市区三级联动</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/32.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/32/middle.jpg" alt="jQuery实现页面滚动时元素智能定位" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/32.html" >jQuery实现页面滚动时元素智能定位</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/30.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/30/middle.jpg" alt="jQuery点“喜欢”功能" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/30.html" >jQuery点“喜欢”功能</a> </p> 
+                            </div> 
+                        </div>
+                        <div class="per"> 
+                            <a target="_blank" href="http://www.sucaihuo.com/js/29.html" class="img_link"> 
+                                <img src="images/grey.gif" original="http://www.sucaihuo.com/jquery/logo/29/middle.jpg" alt="强大的flash头像上传插件(支持旋转、拖拽、剪裁、生成缩略图等)" class="lazy"  />
+                            </a>
+                            <div class="foot">
+                                <p class="title"><a target="_blank"  href="http://www.sucaihuo.com/js/29.html" >强大的flash头像上传插件(支持旋转、拖拽、剪裁、生成缩略图等)</a> </p> 
+                            </div>                
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            Powered by sucaihuo.com  本站皆为作者原创，转载请注明原文链接：<a href="http://www.sucaihuo.com" target="_blank">www.sucaihuo.com</a>
+        </div>
+        <script type="text/javascript" src="http://www.sucaihuo.com/Public/js/other/jquery.js"></script>
+        <script type="text/javascript" src="lazyload.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $("img.lazy").lazyload({effect: "fadeIn"})
+            })
+        </script>
+    </body>
+</html>
+

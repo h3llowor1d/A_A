@@ -1,0 +1,260 @@
+
+<div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-zh">
+        <h1>详情</h1>
+
+        <p>文章详情文章详情文章详情文章详情文章详情文章详情</p>
+    </div>
+    <div class="page-header">
+        <ol class="breadcrumb">
+            <li><a href="/" class="label label-default">首页</a></li>
+            <li><a href="/Blog/list" class="label label-success">文章列表</a></li>
+        </ol>
+    </div>
+    <div id="listView">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <span class="">{$data.title}</span>
+                    <span class="margin-l-20 label label-danger label-zh">作者：{$data.nickname}</span>
+                    <span class="margin-l-10 label label-info label-zh">{$data.username}</span>
+                    <span class="margin-r-15 label label-default pull-right label-zh" >浏览：{$data.click}</span>
+                    <span class="margin-r-15 label label-warning pull-right label-zh">日期：{$data.addtime|date = "Y-m-d H:i:s",###}</span>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="form-group form-group-sm  margin-b-20">
+                    <div id="select_tags" class="col-sm-10">
+                        <volist name="tagList" id="tagItem">
+                            <a href="javascript:;" data-tagid="{$tagItem.id}" class="label margin-r-10 label-default">{$tagItem.tagname}</a>
+                        </volist>
+                    </div>
+                </div>
+                <div class="panel-body">{$data.content|htmlspecialchars_decode}</div>
+            </div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <h2 class="title h4 mt30 mb20 post-title" id="answers-title">评论区 6条评论</h2>
+                </div>
+
+            </div>
+            <div id="commentArea" class="panel-body">
+                <!--<volist name="comments" id="item">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <span class="margin-r-15 label label-info label-zh">{$item.nickname}</span>
+                                <span class="margin-r-15 label label-primary label-zh">{$item.createtime}</span>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            {$item.content}
+                        </div>
+                    </div>
+                </volist>-->
+
+                <div class="widget-answers">
+                <article class="clearfix widget-answers__item accepted" id="a-1020000000330217">
+                    <div class="post-offset">
+                        <span class="no" style="">#1</span>
+                        <a href="/u/shamiao"><img class="avatar" src="//sfault-avatar.b0.upaiyun.com/270/943/2709439599-1030000000321731_big64" alt=""></a>
+                        <strong><a href="/u/shamiao" class="mr5">沙渺</a></strong>
+                        <span class="margin-l-10 text-muted">2013年11月04日</span>
+                        <div class="answer fmt mt10">
+                            nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...nkkkkkkkkkkkkkkkkkkkkk...
+
+                        </div>
+
+                        <div class="post-opt">
+                            <ul class="list-inline mb0">
+                                <li><a href="javascript:void(0);" class="comments" data-id="1020000000330217" data-target="#comment-1020000000330217"> 评论</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget-comments hidden" id="comment-1020000000330217" data-id="1020000000330217">
+                            <div class="widget-comments__form row">
+                                <form class="col-md-10 col-xs-12">
+                                    <div class="form-group mb0">
+                                        <input name="id" type="hidden" value="1020000000330217">
+                                        <textarea name="text" class="form-control" id="commentText-1020000000330217" data-id="1020000000330217" placeholder="添加评论"></textarea>
+                                    </div>
+                                </form>
+                                <div class="col-md-2 col-xs-12">
+                                    <button type="submit" class="btn btn-primary btn-sm btn-block postComment m-mt15" data-id="1020000000330217">提交评论</button>
+                                    <div class="mt10"><a href="javascript:void(0);" class="toggle-comment-helper">语法提示</a></div>
+                                </div>
+                                <div class="col-md-10 col-xs-12 fmt comment-helper" data-rank="0" style="display:none;">
+                                    <div class="alert alert-warning mb10 mt10">评论支持部分 Markdown 语法：<code>**bold**</code> <code>_italic_</code> <code>[link](http://example.com)</code> <code>&gt; 引用</code> <code>`code`</code> <code>- 列表</code>。<br>同时，被你 @ 的用户也会收到通知</div>
+                                </div>
+
+                            </div><!-- /.widget-comments__form -->
+                        </div><!-- /.widget-comments -->
+
+
+                    </div>
+                </article><!-- /article -->
+
+
+                    <article class="clearfix widget-answers__item accepted" id="a-102000000033021117">
+                        <div class="post-offset">
+                            <a href="/u/shamiao"><img class="avatar" src="//sfault-avatar.b0.upaiyun.com/270/943/2709439599-1030000000321731_big64" alt=""></a>
+                            <strong><a href="/u/shamiao" class="mr5">沙渺</a></strong>
+                            <span class="ml10 text-muted">2013年11月04日 回答</span>
+                            <div class="answer fmt mt10">
+                                nkkkkkkkkkkkkkkkkkkkkk...
+
+                            </div>
+
+                            <div class="post-opt">
+                                <ul class="list-inline mb0">
+                                    <li><a href="javascript:void(0);" class="comments" data-id="1020000000330217" data-target="#comment-1020000000330217"> 评论</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="widget-comments hidden" id="comment-10200000001330217" data-id="1020000000330217">
+                                <div class="widget-comments__form row">
+                                    <form class="col-md-10 col-xs-12">
+                                        <div class="form-group mb0">
+                                            <input name="id" type="hidden" value="1020000000330217">
+                                            <textarea name="text" class="form-control" id="commentText-10200000003130217" data-id="1020000000330217" placeholder="添加评论"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="col-md-2 col-xs-12">
+                                        <button type="submit" class="btn btn-primary btn-sm btn-block postComment m-mt15" data-id="1020000000330217">提交评论</button>
+
+                                    </div>
+                                </div><!-- /.widget-comments__form -->
+                            </div><!-- /.widget-comments -->
+
+
+                        </div>
+                    </article><!-- /article -->
+
+                <div class="text-center">
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    写评论
+                </div>
+            </div>
+            <form action=""  method="post">
+                <div class="panel-body">
+                    <script id="commentEditor" style="height:200px;" name="content" type="text/plain"></script>
+                </div>
+                <div class="panel-footer">
+                    <input type="button" id="commentBtn" class="btn btn-facebook" value="提交评论">
+                </div>
+            </form>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<script>
+    $(function(){
+        $(".post-opt .comments").on('click',function(){
+            //var cid = $(this).prop('data-id');
+            var target = $(this).attr('data-target');
+            $(target).removeClass('hidden');
+        });
+
+
+
+        var commentEditor = UE.getEditor("commentEditor",{
+            toolbars:[
+                ['bold', 'italic', 'underline', 'fontborder','time','date','insertcode','fontfamily','fontsize','paragraph','simpleupload','insertimage','emotion',
+                    'spechars','justifyleft','justifyright','justifycenter','justifyjustify'],
+                ['strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote',
+                    'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+            ],
+            autoHeightEnabled: false,
+            autoFloatEnabled: true,
+            pasteplain:false,
+            elementPathEnabled:false,
+            maximumWords:500,
+            wordCountMsg:"已输入{#count}个字符, 还可以输入{#leave}个字符。",
+            wordOverFlowMsg:"<span style=\"color:red;\">够了够了，别把数据库撑坏了！</span>"
+        });
+
+        /*commentEditor.addListener('contentChange',function(){
+            var len = commentEditor.getContentLength(true);
+            if(len>500){
+                return false;
+            }
+        });*/
+
+        $commentBtn = $("#commentBtn");
+        $commentBtn.on('click',function(){
+            var len = commentEditor.getContentLength(true);
+            if(len>500){
+                return false;
+            }
+
+            var a_id = "{$id}",
+                p_id = 0,
+                content = commentEditor.getContent();
+            $.ajax({
+                type:"POST",
+                url:'/Blog/comment',
+                dataType:"JSON",
+                data:{
+                    aid:a_id,
+                    pid:p_id,
+                    content:content
+                },
+                success:function(msg){
+                    if(msg.status == -1){
+                        if(confirm("您还未登陆，是否去登陆?")){
+                            window.location.href = "/Login";
+                        }else{
+                            return false;
+                        }
+
+                        return false;
+                    }
+
+                    var comment = msg.content;
+                        //var cid = comment.id;
+                        //var aid = comment.article_id;
+                        //var uid = comment.u_id;
+                        var nickname = comment.nickname;
+                        var content = comment.content;
+                        //var time = comment.addtime;
+                        var createtime = comment.createtime;
+
+                    var html = "<div class=\"panel panel-danger\">" +
+                                    "<div class=\"panel-heading\">" +
+                            "<div class=\"panel-title\">"+
+                    "<span class=\"margin-r-15 label label-info label-zh\">"+nickname+"</span>"+
+                    "<span class=\"margin-r-15 label label-primary label-zh\">"+createtime+"</span>"+
+                            "</div>"+
+                    "</div>"+
+                    "<div class=\"panel-body\">"+
+                            content +
+                            "</div>" +
+                    "</div>";
+
+                    //$("#commentArea").append(html); //从后面插入
+                    $("#commentArea").first().prepend(html);//从前面插入
+                    commentEditor.setContent("");
+                },
+
+                error:function(){
+                    alert("服务器故障");
+                }
+
+            });
+
+        })
+    });
+</script>

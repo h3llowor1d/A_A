@@ -1,0 +1,115 @@
+
+    <style>
+
+        .form-group div{
+            display: inline-block;
+        }
+        .error{
+            position: relative;
+            left: 353px;
+            top: 100px;
+            color: crimson;
+            font-family: "微软雅黑";
+            font-size: 17px;
+        }
+        .form-group div input{
+            border: #fff;
+        }
+
+        .l1{
+            width: 60px;
+        }
+
+        .l2{
+            width: 250px;
+        }
+        .l21{
+            width: 150px;
+        }
+        .l3{
+            width: 100px;
+        }
+        .yzm:hover{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="form-box" id="login-box">
+    success
+</div>
+<div class="errorMessgae">errorMessgaeerrorMessgae</div>
+<script>
+
+
+    function checkEmail(email){
+        var val = email.target.value ||$("#email").val();
+        if (val==null || val =="")
+        {
+            showError("邮箱必须填写");
+            //$(".errorMessgae").
+            //showError(".errorMessgae","邮箱必须填写",'tinRightIn');
+            return false;
+        }
+
+        var regEmail = /^\w+([-.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+        var r = val.match(regEmail);
+        if(!r) {
+            showError("邮箱格式不正确");
+            return false;
+        }
+    }
+
+
+    function check() {
+
+        var password = document.forms["register"]["password"].value;
+        if (password == null || password == "") {
+            showError("密码必须填写");
+            return false;
+        }
+        if (password.length < 6) {
+            showError("密码必须大于6位");
+            return false;
+        }
+        var password2 = document.forms["register"]["password2"].value;
+        if (password2 == null || password2 == "") {
+            showError("密码必须确认");
+            return false;
+        }
+        if (password2 !== password) {
+            showError("两次密码必须相同");
+            return false;
+        }
+
+
+        window.count = 0;
+
+        function showError(text) {
+            var $errDiv = $(".errorMessgae");
+            $errDiv.html(text).css('opacity', 1);
+
+            count = 0;
+
+            var time = setInterval(function () {
+                if (count < 100) {
+                    count++;
+                    $errDiv.css('opacity', (1 - count * 0.01));
+                    time();
+                }
+
+                count = 0;
+
+                clearInterval(time);
+            }, 20);
+
+        }
+    }
+        var yanzm = document.getElementById("yanzm");
+
+        yanzm.onclick = function () {
+            this.src = "/User/getYZM?timestamp=" + new Date();
+        }
+
+
+</script>

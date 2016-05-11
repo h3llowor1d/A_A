@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="__PUBLIC__/styles/userdetail.css">
+
+<div class="container theme-showcase" role="main">
+    <div id="content" class="clearfix">
+        <div class="mod-avator clearfix">
+            <div class="avator">
+                <div class="avator-img">
+                    <div class="portrait-bg"></div>
+                    <div class="portrait">
+                        <img class="portrait-img" src="{$userInfo.headimg}"><span></span>
+                    </div>
+                    <div class="info-status-bg"></div>
+                    <div class="info-online">在线</div>
+                </div>
+                <div><p class="uname wordwrap"><a href="#" class="link">{$userInfo.nickname}</a></p>
+
+                    <p class="clearfix"></p></div>
+            </div>
+        </div>
+        <div class="mod-profile"><a href="/User/update/id/{$userInfo.id}" class="edit-btn">编辑资料</a>
+
+            <div class="split-line-top"></div>
+            <dl class="userdetail-profile-basic"><a href="/Admin/Index/update/id/{$item.id}" class="edit-link">编辑</a>
+                <dt>基本资料</dt>
+
+                <dd><span class="profile-attr">邮箱</span> <span class="profile-cnt"> {$userInfo.email}</span></dd>
+                <dd><span class="profile-attr">注册时间</span> <span class="profile-cnt"> {$userInfo.addtime|date='Y-m-d H:i:s',###}</span></dd>
+
+            </dl>
+            <div class="split-line"></div>
+            <dl><a href="/Admin/Index/update/id/{$item.id}" class="edit-link">编辑</a>
+                <dt>详细资料</dt>
+                <dd><span class="profile-attr">生日</span> <span><if condition="$userInfo.birthday neq '' ">{$userInfo.birthday} <else />未填写</if></span></dd>
+                <dd><span class="profile-attr">姓名</span> <span><if condition="$userInfo.realname neq '' ">{$userInfo.realname} <else />未填写</if> </span></dd>
+                <dd><span class="profile-attr">QQ</span> <span><if condition="$userInfo.qq neq '' ">{$userInfo.qq} <else />未填写</if>  </span></dd>
+                <dd><span class="profile-attr">年龄</span> <span><if condition="$userInfo.age neq '' ">{$userInfo.age} <else />未填写</if> </span></dd>
+                <dd><span class="profile-attr">性别</span> <span><if condition="$userInfo.sex neq '' ">{$userInfo.sex} <else />未填写</if>  </span></dd>
+                <dd><span class="profile-attr">地区</span> <span id="areas"><if condition="$userInfo.area neq '' ">{$userInfo.area} <else />未填写</if> </span></dd>
+
+
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery 1.11.1 -->
+<script src="__PLUGINS__/adminLTE/js/jquery-1.11.1.js" type="text/javascript"></script>
+<!-- jQuery UI 1.10.3 -->
+<script src="__PLUGINS__/adminLTE/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+<!-- Bootstrap -->
+<script src="__PLUGINS__/bootstrap-3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- iCheck -->
+<script src="__PLUGINS__/adminLTE/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+<script src="__JS__/register/areas.js" type="text/javascript"></script>
+<!-- AdminLTE App -->
+<script src="__PLUGINS__/adminLTE/js/AdminLTE/app.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        var areas = $("#areas").html();
+        if(areas !== '未填写'){
+            var sheng = areas.substr(0,6);
+            var shi = areas.substr(7,6);
+            var qu = areas.substr(14,6);
+
+
+        }
+    })
+</script>

@@ -1,0 +1,158 @@
+<div class="theme-showcase" style="width: 80%;margin: 10px;" role="main">
+    <div class="panel" style="padding: 20px;">
+        <div class="form-group form-group-sm" style="height: 40px;line-height: 40px;">
+            <label class="col-sm-1 control-label">标题</label>
+            <div class="col-sm-10">
+                <input type="text" id="title" class="form-control">
+            </div>
+        </div>
+        <div class="form-group form-group-sm" style="height: 40px;line-height: 40px;">
+            <label class="col-sm-1 control-label">标签</label>
+            <div id="select_tags" class="col-sm-10">
+                <volist name="tagList" id="tagItem">
+                    <a href="javascript:;" data-tagid="{$tagItem.id}" class="label margin-r-10 label-default">{$tagItem.tagname}</a>
+                </volist>
+                <span class="label margin-r-10 label-info">新标签</span>
+                <input type="hidden" name="tags" value="">
+            </div>
+        </div>
+        <div class="form-group form-group-sm margin-t-15" style="min-height: 30px;">
+            <label class="col-sm-1 control-label">配图</label>
+
+            <div class="col-sm-11">
+                <div id="uploader-demo">
+                    <!--用来存放item-->
+                    <div id="fileList" class="uploader-list"></div>
+                    <div id="filePicker">选择图片</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group form-group-sm margin-t-15">
+            <label class="col-sm-1 control-label">内容</label>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="margin-bottom: 30px;">
+            <script id="ueditor" style="height:500px;width:1200px;" name="content"></script>
+            <input type="hidden" id="imgurl" value="">
+            <textarea id="desc" style="display: none;" name="desc"></textarea>
+            <div class="col-md-12" style="width: 1200px;"><input type="button" id="add" class="center-block btn btn-info" value="提交"></div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(function(){
+        var uploader = WebUploader.create({
+            // 选完文件后，是否自动上传。
+            auto        :true,
+            // swf文件路径
+            swf         :'/Public/plugins/webuploader/Uploader.swf',
+            // 文件接收服务端。
+            server      :'/uploader/upload',
+            // 选择文件的按钮。可选。
+            // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+            pick        :'#filePicker',
+            fileNumLimit:1,
+            compress :false,
+            // 只允许选择图片文件。
+            accept      :{
+                title     :'Images',
+                extensions:'gif,jpg,jpeg,bmp,png',
+                mimeTypes :'image/*'
+            }
+        });
+
+        // 当有文件添加进来的时候
+        uploader.on('fileQueued',function(file){
+            var $li = $(
+                            '<div id="' + file.id + '" class="file-item thumbnail1">' +
+                            '<img>' +
+                            '</div>'
+                    ),
+                    $img = $li.find('img');
+            // $list为容器jQuery实例
+            $("#fileList").append($li);
+            $("#filePicker").remove();
+            // 创建缩略图
+            // 如果为非图片文件，可以不用调用此方法。
+            // thumbnailWidth x thumbnailHeight 为 100 x 100
+            uploader.makeThumb(file,function(error,src){
+                if(error){
+                    $img.replaceWith('<span>不能预览</span>');
+                    return;
+                }
+                $img.attr('src',src);
+            },200,200);
+        });
+        // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+        uploader.on('uploadSuccess',function(file,e){
+            var object = JSON.parse(e._raw);
+            var imgUrl = object.imgUrl;
+            $("#imgurl").val(imgUrl);
+            $("#imgDiv").remove();
+        });
+    });
+
+    $(function(){
+        var $tags = $("#select_tags");
+        var $tagsA = $tags.find('a');
+        var $tagsInput = $tags.find('input[name=tags]');
+        var selected = new Array();
+        $tagsA.on('click',function(){
+            var tagid = $(this).attr('data-tagid'),
+                    isSelected = $(this).hasClass('label-default'),
+                    $self = $(this);
+            if(isSelected){
+                $self.removeClass('label-default').addClass('label-danger');
+                selected.push(tagid);
+            }else{
+                $self.removeClass('label-danger').addClass('label-default');
+                //selected.remove(tagid);
+                var index = $.inArray(tagid,selected);
+                if(index > -1) selected.splice(index,1);
+            }
+            $tagsInput.val(selected.join(','));
+        });
+    });
+
+
+    $(function(){
+        var ue = UE.getEditor('ueditor',{
+            initialFrameWidth:1200,
+            elementPathEnabled:false
+        });
+
+        $("#add").on('click',function(){
+            var title = $.trim($("#title").val());
+            if(title == ""){
+                notice("标题不能为空");
+                return false;
+            }
+
+
+            var desc = UE.getEditor('ueditor').getContentTxt();
+            if(desc === ""){
+                notice('内容不能为空');
+                return false;
+            }
+
+            var tags = $("input[name=tags]").val(),
+                img = $("#imgurl").val();
+            $.post("/a/blog/add",{
+                tags : tags,
+                img:img,
+                desc :desc,
+                title :title,
+                img:$("#imgurl").val(),
+                content:UE.getEditor('ueditor').getContent()
+            },function(data){
+                if(data.status == 0){
+                    notice("添加成功",true,'/a/blog/update/'+data.insertedId);
+                }
+            },"JSON");
+
+            return false;
+        });
+    });
+
+</script>

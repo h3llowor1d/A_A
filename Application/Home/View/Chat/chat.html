@@ -1,0 +1,172 @@
+
+
+<div class="container jumbotron-zh">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">聊天室(<span id="userNum" style="font-size: 12px;padding: 0 5px;color:lightsteelblue;  "></span>)
+                <if condition="$userInfo.id eq 0">
+                    <span class="pull-right" style="">你是 {$userInfo.nickname}</span>
+                </if>
+            </div>
+
+        </div>
+        <div id="chatDiv" class="panel-body" style="min-height: 400px">
+            <volist name="unread" id="item">
+                <div class="msgList">
+                    {$item.nickname}:{$item.message} --{$item.addtime|date="Y-m-d H:i:s",###}
+                </div>
+            </volist>
+
+        </div>
+        <div class="panel-footer">
+            <div class="form-group">
+                <input type="hidden" id="from_uid" value="1">
+                <if condition="!empty($userList)">
+                    <select id="to_uid" class="form-control">
+                        <option value="-1">发送给所有人</option>
+                        <volist name="userList" id="item">
+                            <option value="{$item.id}">{$item.nickname}</option>
+                        </volist>
+                    </select>
+                </if>
+                <textarea id="content" class="form-control"></textarea>
+                <div class="msg-send">
+                    <a href="javascript:;" id="send" class="btn btn-info pull-right">发送</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="__JS__/base64.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var Chat = {
+            userId:"{$userInfo.id}",
+            headImg:"{$userInfo.headimg}",
+            message:"",
+            encode:function(text){
+                var b = new Base64();
+                return b.encode(text);
+            },
+            userName:"{$userInfo.nickname}"
+        };
+
+        //var message = "";
+        var wsServer = 'ws://127.0.0.1:8001';
+        connect();
+
+        function connect(){
+            try{
+                window.isConnect = false;
+                window.ws = new WebSocket(wsServer);
+                ws.onopen = function (evt) { onOpen(evt) };
+                ws.onclose = function (evt) { onClose(evt) };
+                ws.onmessage = function (evt) { onMessage(evt) };
+                ws.onerror = function (evt) { onError(evt) };
+            }catch (Error) {
+                alert(Error);
+            }
+        }
+
+
+        function onOpen(evt) {
+            console.log("连接服务器成功");
+            window.isConnect = true;
+            if(Chat.userId){
+                sendUid();
+            }
+        }
+        function onClose(evt) {
+            ws.close();
+        }
+
+        var i = 0;
+        function onMessage(evt) {
+
+            console.log(i++,evt);
+            //var data1= decodeDataFrame(evt);
+            var data = JSON.parse(evt.data);
+            switch (data.type) {
+                case 'msg':
+                    addMsg(data.content,"other");
+                        console.log(data.content);
+                    break;
+                case 'num' :
+                    updataUserNum(data.content);
+                    break;
+                case 'notice':
+                    addMsg(Chat.message,"self");
+                    Chat.message = "";
+                    break;
+                case 'system':
+                    addMsg(data.content,"system");
+                    break;
+            }
+
+            console.log('Retrieved data from server: ' + evt.data);
+        }
+        function onError(evt) {
+            window.isConnect = false;
+            $("#userNum").html("服务器未连接");
+
+            //console.log('Error occured: ' + evt);
+        }
+        function sendMsg() {
+            var b = new Base64();
+            if(isConnect){
+                Chat.message = $('#content').val();
+                var now = new Date().getTime();
+                var user = $("#to_uid").val();
+                if(user == undefined) user = 0;
+                /*if(user == "-1" && Chat.userId){
+                    var userArr = [];
+                    $("#to_uid option").each(function(){
+                        if($(this).val() != "-1")
+                            userArr.push($(this).val());
+                    });
+                    user = userArr.join(",");
+                }else{
+                    user = 0;
+                }*/
+                var content = '{\"type\":\"msg\",\"time\":'+now+',\"content\":\"'+ b.encode(Chat.message) +'\",\"uid\":\"'+user+'\",\"username\":\"'+Chat.userName+'\"}';
+                //console.log(content);
+                ws.send(content);
+                $('#content').val("");
+            }
+        }
+
+        function sendUid(){
+            var content = '{\"type\":\"newUser\",\"uid\":\"'+Chat.userId+'\"}';
+            ws.send(content);
+            console.log("senduid:"+content);
+        }
+
+        function addMsg(data,type) {
+            var text = "";
+            var b = new Base64();
+            switch (type){
+                case "self":
+                    text = "（我）:" + data;
+                    break;
+                case "other":
+                    text = data.username +":"+ b.decode(data.text);
+                    break;
+                case "system":
+                    text = data.username + ":" +data.text;
+                    break;
+            }
+            $("#chatDiv").append(text+"<br>");
+        }
+
+        function updataUserNum(msg) {
+            $('#userNum').html(msg);
+        }
+
+        $("#send").on('click',function(){
+            sendMsg();
+        });
+
+    })
+</script>

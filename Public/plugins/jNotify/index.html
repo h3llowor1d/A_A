@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>jNotify漂亮的提示插件</title>
+        <meta name="keywords" content="信息提示,jNotify" />
+        <meta name="description" content="jNotify是一款基于jQuery的信息提示插件，它支持操作成功、操作失败和操作提醒三种信息提示方式。" />
+        <link rel="stylesheet" type="text/css" href="http://www.sucaihuo.com/jquery/css/common.css" />
+        <link rel="stylesheet" type="text/css" href="jNotify.jquery.css" />
+        <style type="text/css">
+            .demo{width:400px; height:300px; margin:100px auto}
+            .demo p{line-height:42px; height:42px; font-size:18px}
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div class="head_inner clearfix">
+                <ul id="nav">
+                    <li><a href="http://www.sucaihuo.com">首 页</a></li>
+                    <li><a href="http://www.sucaihuo.com/templates">网站模板</a></li>
+                    <li><a href="http://www.sucaihuo.com/js">网页特效</a></li>
+                </ul>
+                <a class="logo" href="http://www.sucaihuo.com"><img src="http://www.sucaihuo.com/Public/images/logo.jpg" alt="素材火logo" /></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="demo">
+                <h2 class="title"><a href="http://www.sucaihuo.com/js/61.html">jNotify漂亮的提示插件</a></h2>  
+                <p><a href="#" class="success">1、操作成功!</a></p>
+                <p><a href="#" class="notice">2、操作提醒!</a></p>
+                <p><a href="#" class="error">3、操作失败!</a></p><br />
+                <p><a href="#" class="three">4、操作成功，提醒和失败!!</a></p>
+            </div>
+        </div>
+        <div class="foot">
+            Powered by sucaihuo.com  本站皆为作者原创，转载请注明原文链接：<a href="http://www.sucaihuo.com" target="_blank">www.sucaihuo.com</a>
+        </div>
+        <script type="text/javascript" src="http://www.sucaihuo.com/Public/js/other/jquery.js"></script> 
+        <script type="text/javascript" src="jNotify.jquery.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $("a.success").click(function() {
+                    jSuccess("恭喜，操作成功! + <strong>10</strong> 金币!", {
+                        VerticalPosition: 'center',
+                        HorizontalPosition: 'center'
+                    });
+                });
+                $("a.notice").click(function() {
+                    jNotify("注意：请完善你的<strong>个人资料！</strong>");
+                });
+                $("a.error").click(function() {
+                    jError("操作失败，请重试!!");
+                });
+                $("a.three").click(function() {
+                    jSuccess("操作成功，2秒后显示下一个提示框!!", {
+                        TimeShown: 2000,
+                        onClosed: function() {
+                            jNotify("注意：点击这里显示下一个提示框", {
+                                VerticalPosition: 'top',
+                                autoHide: false,
+                                onClosed: function() {
+                                    jError("出错啦! 演示结束,<br /> 请点击背景层关闭提示框。", {
+                                        clickOverlay: true,
+                                        autoHide: false,
+                                        HorizontalPosition: 'left'
+                                    });
+                                }
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
+

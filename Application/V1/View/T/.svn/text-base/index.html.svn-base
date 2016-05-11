@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="__STYLES__/jd.css" />
+    <style>
+        li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <script src="__JS__/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div style="margin: 100px;" id="store-selector" class="hover">
+    <div class="text">
+        <div title="安徽蚌埠市五河县">安徽蚌埠市五河县</div>
+        <b></b></div>
+    <div class="content">
+        <div data-widget="tabs" class="m JD-stock" id="JD-stock">
+            <div class="mt">
+                <ul class="tab">
+                    <li data-index="0" data-widget="tab-item" class="curr"><a href="#none" class="hover"><em>上海</em><i></i></a></li>
+                    <li data-index="1" data-widget="tab-item" style="" class=""><a href="#none" class="" title="徐汇区"><em>徐汇区</em><i></i></a></li>
+                    <li data-index="2" data-widget="tab-item" style="display: list-item;" class=""><a href="#none" class="" title="五河县"><em>请选择</em><i></i></a></li>
+                    <li data-index="3" data-widget="tab-item" style="display: none;"><a href="#none" class=""><em>请选择</em><i></i></a></li>
+                </ul>
+                <div class="stock-line"></div>
+            </div>
+            <div class="mc" data-area="0" data-widget="tab-content" id="stock_province_item" style="display: block;">
+                <ul class="area-list">
+                    <li><a href="#none" data-value="1">北京</a></li>
+
+                </ul>
+            </div>
+            <div class="mc" data-area="1" data-widget="tab-content" id="stock_city_item" style="display: none;">
+                <ul class="area-list">
+                    <li><a href="#none" data-value="2813">徐汇区</a></li>
+                </ul>
+            </div>
+            <div class="mc" data-area="2" data-widget="tab-content" id="stock_area_item" style="display: none;">
+                <ul class="area-list">
+                    <li><a href="#none" data-value="51976">城区</a></li>
+                </ul>
+            </div>
+            <div class="mc" data-area="3" data-widget="tab-content" id="stock_town_item" style="display: none;"></div>
+        </div>
+        <span class="clr"></span>
+    </div>
+    <div class="close" onclick="$('#store-selector').removeClass('hover')"></div>
+</div>
+<script>
+    $(".area-list li a").on('click',function(e){
+        var pid = $(this).prop('data-value');
+    });
+</script>
+</body>
+</html>

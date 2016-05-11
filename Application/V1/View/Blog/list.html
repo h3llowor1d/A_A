@@ -1,0 +1,67 @@
+
+
+<div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-zh">
+        <h1>文章列表</h1>
+
+        <p>文章列表文章列表文章列表文章列表文章列表文章列表文章列表</p>
+
+        <div class="pull-left input-group input-group-sm" style="width:50%">
+            <input type="text" id="key" class="form-control" placeholder="关键字">
+        </div>
+
+        <div class="pull-right input-group input-group-sm" style="width:50%">
+            <input type="text" id="datepicker" class="form-control" placeholder="选择日期">
+            <span class="input-group-btn">
+                        <button id="search" class="btn btn-info btn-flat" type="button">Go!</button>
+                    </span>
+        </div>
+    </div>
+    <div class="page-header">
+        <ol class="breadcrumb">
+            <li><a href="/" class="label label-default">首页</a></li>
+            <li><a href="/Blog/list" class="label label-success">文章列表</a></li>
+        </ol>
+    </div>
+    <div id="listView">
+        <volist name="data" id="item">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title"><span class="label label-primary">{$item.title}</span> 作者:{$item.nickname} 日期：{$item.addtime|date='Y-m-d H:i:s',###} 浏览量：{$item.click} 评论:{$item.comment}</div>
+                </div>
+                <div class="panel-body">{$item.desc}</div>
+                <div class="panel-footer">
+                <a class="btn btn-info" href="/read/{$item.id}">详细内容</a>
+            </div>
+            </div>
+        </volist>
+        <div class="green pager">{$show}</div>
+    </div>
+</div>
+
+<script src="__JS__/jquery-ui.js"></script>
+<script>
+    $(function(){
+        $("#datepicker").datepicker({
+            monthNames:['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二 月'],
+            dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"], // For formatting
+            dayNamesShort: ["日", "一", "二", "三", "四", "五", "六"], // For formatting
+            dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"], // Column headings for days starting at Sunday
+            dateFormat: "yy-mm-dd",
+            maxDate:"{__MAXDATE__}",
+            onSelect:function(){
+                var val = $(this).val(),
+                    key = $('#key').val();
+                window.location.href = "/Blog/list?date="+val+"&key="+key;
+            }
+        });
+
+        $("#search").on('click',function(){
+            var val = $(this).val(),
+                    key = $('#key').val();
+            window.location.href = "/Blog/list?date="+val+"&key="+key;
+        });
+    })
+</script>

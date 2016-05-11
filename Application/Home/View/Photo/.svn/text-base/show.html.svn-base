@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="jumbotron jumbotron-zh">
+        <h1>{$album.name}</h1>
+        <p>{$album.desc}</p>
+        <!--<a href="#" id="newPhoto" class="btn btn-flat btn-info">上传照片</a>-->
+    </div>
+
+</div>
+
+<div class="container bg-album">
+    <div id="photoList" class="row padding-5 margin-t-20">
+        <volist name="list" id="item">
+            <div class="col-xs-12 col-md-4 col-lg-3 padding5">
+                <div class="box box-info">
+                    <div class="box-header">
+                        <h3 class="box-title text-info">{$item.title}</h3>
+                        <div class="box-tools pull-right">
+                            <a href="javascript:;" class="label bg-aqua">点个赞</a>
+                        </div>
+                    </div>
+                    <div class="photothumb">
+                        <img src="__PUBLIC__/plugins/lazyload/images/grey.gif" original="{$item.url}" alt="{$item.title}" class="lazy">
+                    </div>
+                    <div class="box-footer">
+                        <span class="text-warning">哇，哇，哇</span>
+                    </div>
+                </div>
+            </div>
+        </volist>
+    </div>
+
+</div>
+<script src="__PUBLIC__/plugins/lazyload/lazyload.js"></script>
+<script>
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"})
+    })
+</script>

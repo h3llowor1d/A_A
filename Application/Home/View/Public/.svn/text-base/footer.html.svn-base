@@ -1,0 +1,56 @@
+<div style="height: 20px;"></div>
+<footer id="footer" class="footer navbar-inverse">
+    <div class="container">
+        <p class="text-muted">
+            <span class="margin-r-15">Copyright @2015 Zhanhao.club </span>
+            <span class="margin-r-15">Based on ThinkPHP3.2.3</span>
+            <span class="margin-r-15">Bootstrap3.3.4</span>
+            <span class="margin-r-15">Ueditor1.4.3</span>
+            <span class="margin-r-15">jQuery1.11.1</span>
+            <span class="margin-r-15 pull-right" style="color:#EEEEEE">当前在线：{$onlineCount['allCount']}</span>
+        </p>
+    </div>
+</footer>
+
+<script>
+    $(function(){
+        startTime();
+        $("#time").css("float","left").css('color',"wheat").css("font-size","30px").css("line-height","52px").css('margin-right',"20px");
+    })
+
+    function startTime()
+    {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        var $time = $('#time');
+        // add a zero in front of numbers<10
+        m = checkTime(m);
+        s = checkTime(s);
+
+        //Check for PM and AM
+        var day_or_night = (h > 11) ? "PM" : "AM";
+
+        //Convert to 12 hours system
+        if (h > 12)
+            h -= 12;
+
+        //Add time to the headline and update every 500 milliseconds
+        $time.html(h + ":" + m + ":" + s + " " + day_or_night);
+        setTimeout(function() {
+            startTime()
+        }, 500);
+    }
+
+    function checkTime(i)
+    {
+        if (i < 10)
+        {
+            i = "0" + i;
+        }
+        return i;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,934 @@
+[ 2015-12-07T00:27:35+08:00 ] 61.135.190.69 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012515s ]
+
+[ 2015-12-07T00:50:19+08:00 ] 185.106.94.91 /html/languages/es_es/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 无法加载控制器:Html
+
+[ 2015-12-07T00:51:23+08:00 ] 61.135.190.72 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012283s ]
+
+[ 2015-12-07T03:05:33+08:00 ] 121.42.0.34 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012304s ]
+
+[ 2015-12-07T03:18:56+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012391s ]
+
+[ 2015-12-07T05:07:34+08:00 ] 61.135.190.200 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011860s ]
+
+[ 2015-12-07T05:12:09+08:00 ] 61.135.190.197 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013106s ]
+
+[ 2015-12-07T05:30:56+08:00 ] 61.160.213.110 http://passport.tianya.cn/register/default.jsp?sourceURL=http%3A%2F%2Fbbs.tianya.cn%2F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+ERR: 非法操作:default.jsp
+
+[ 2015-12-07T08:17:26+08:00 ] 185.49.87.232 /phpMyAdmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 无法加载控制器:PhpMyAdmin
+
+[ 2015-12-07T08:17:27+08:00 ] 185.49.87.232 /pma/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载控制器:Pma
+
+[ 2015-12-07T08:17:29+08:00 ] 185.49.87.232 /myadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+ERR: 无法加载控制器:Myadmin
+
+[ 2015-12-07T08:57:16+08:00 ] 61.160.213.110 http://passport.tianya.cn/register/default.jsp?sourceURL=http%3A%2F%2Fbbs.tianya.cn%2F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 非法操作:default.jsp
+
+[ 2015-12-07T08:59:01+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012034s ]
+
+[ 2015-12-07T09:01:30+08:00 ] 120.27.29.201 /phpMyAdmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+ERR: 无法加载控制器:PhpMyAdmin
+
+[ 2015-12-07T09:01:30+08:00 ] 120.27.29.201 /pma/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+ERR: 无法加载控制器:Pma
+
+[ 2015-12-07T09:01:30+08:00 ] 120.27.29.201 /myadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+ERR: 无法加载控制器:Myadmin
+
+[ 2015-12-07T10:00:18+08:00 ] 130.208.2.10 /home.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+ERR: 无法加载控制器:Home.asp
+
+[ 2015-12-07T10:20:10+08:00 ] 111.20.248.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011902s ]
+
+[ 2015-12-07T10:42:42+08:00 ] 64.79.100.17 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+ERR: 无法加载控制器:Robots.txt
+
+[ 2015-12-07T11:40:46+08:00 ] 180.166.203.26 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012302s ]
+
+[ 2015-12-07T11:40:46+08:00 ] 180.166.203.26 /uploads/image/zh_32X32.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2015-12-07T11:40:48+08:00 ] 180.166.203.26 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/5c9ee6d19cd41add49f97afe3aef0b25.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059509s ]
+
+[ 2015-12-07T11:40:48+08:00 ] 180.166.203.26 /User/getYZM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2015-12-07T11:40:56+08:00 ] 180.166.203.26 /User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: select * from db_user where email='617667045@qq.com' AND password='c4ca4238a0b923820dcc509a6f75849b' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004904s ]
+
+[ 2015-12-07T11:40:56+08:00 ] 180.166.203.26 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2015-12-07T11:40:57+08:00 ] 180.166.203.26 /User/uc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS 'count' FROM db_artical WHERE u_id = 1051 UNION ALL
+                    SELECT COUNT(*)   FROM db_album WHERE u_id = 1051 UNION ALL
+                    SELECT COUNT(*)   FROM db_photo WHERE u_id = 1051 [ RunTime:0.0215s ]
+SQL: SELECT * FROM `db_user` WHERE ( id=1051 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041431s ]
+
+[ 2015-12-07T11:40:57+08:00 ] 180.166.203.26 /User/img/avatar3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2015-12-07T11:40:57+08:00 ] 180.166.203.26 /User/img/avatar2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+
+[ 2015-12-07T11:40:57+08:00 ] 180.166.203.26 /User/img/avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2015-12-07T11:41:01+08:00 ] 180.166.203.26 /a/blog/list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_artical` WHERE ( u_id=1051 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `db_artical` WHERE ( u_id=1051 ) LIMIT 0,5   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/f5bc402dcac4d100938b8be714214a97.php 第 249 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/f5bc402dcac4d100938b8be714214a97.php 第 254 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/f5bc402dcac4d100938b8be714214a97.php 第 295 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/f5bc402dcac4d100938b8be714214a97.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028694s ]
+
+[ 2015-12-07T11:41:01+08:00 ] 180.166.203.26 /a/blog/img/avatar2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2015-12-07T11:41:01+08:00 ] 180.166.203.26 /a/blog/img/avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2015-12-07T11:41:01+08:00 ] 180.166.203.26 /a/blog/img/avatar3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2015-12-07T11:41:02+08:00 ] 180.166.203.26 /a/blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `db_tags` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `db_tags`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/3d3569c6a267953cce6b3c0c4cc42bd5.php 第 249 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/3d3569c6a267953cce6b3c0c4cc42bd5.php 第 254 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/3d3569c6a267953cce6b3c0c4cc42bd5.php 第 295 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/3d3569c6a267953cce6b3c0c4cc42bd5.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033397s ]
+
+[ 2015-12-07T11:41:02+08:00 ] 180.166.203.26 /a/blog/img/avatar2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2015-12-07T11:41:02+08:00 ] 180.166.203.26 /a/blog/img/avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2015-12-07T11:41:02+08:00 ] 180.166.203.26 /a/blog/img/avatar3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2015-12-07T11:42:03+08:00 ] 180.166.203.26 /a/blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: INSERT INTO `db_artical` (`u_id`,`title`,`tags`,`img`,`content`,`addtime`,`edittime`,`desc`) VALUES ('1051','apache 配置','','','&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# This is the main Apache HTTP server configuration file. &amp;nbsp;It contains the&lt;/p&gt;&lt;p&gt;# configuration directives that give the server its instructions.&lt;/p&gt;&lt;p&gt;# See &amp;lt;URL:http://httpd.apache.org/docs/2.2&amp;gt; for detailed information.&lt;/p&gt;&lt;p&gt;# In particular, see&amp;nbsp;&lt;/p&gt;&lt;p&gt;# &amp;lt;URL:http://httpd.apache.org/docs/2.2/mod/directives.html&amp;gt;&lt;/p&gt;&lt;p&gt;# for a discussion of each configuration directive.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Do NOT simply read the instructions in here without understanding&lt;/p&gt;&lt;p&gt;# what they do. &amp;nbsp;They&amp;#39;re here only as hints or reminders. &amp;nbsp;If you are unsure&lt;/p&gt;&lt;p&gt;# consult the online docs. You have been warned. &amp;nbsp;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Configuration and logfile names: If the filenames you specify for many&lt;/p&gt;&lt;p&gt;# of the server&amp;#39;s control files begin with &amp;quot;/&amp;quot; (or &amp;quot;drive:/&amp;quot; for Win32), the&lt;/p&gt;&lt;p&gt;# server will use that explicit path. &amp;nbsp;If the filenames do *not* begin&lt;/p&gt;&lt;p&gt;# with &amp;quot;/&amp;quot;, the value of ServerRoot is prepended -- so &amp;quot;logs/foo.log&amp;quot;&lt;/p&gt;&lt;p&gt;# with ServerRoot set to &amp;quot;C:/Program Files/Apache Software Foundation/Apache2.2&amp;quot; will be interpreted by the&lt;/p&gt;&lt;p&gt;# server as &amp;quot;C:/Program Files/Apache Software Foundation/Apache2.2/logs/foo.log&amp;quot;.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# NOTE: Where filenames are specified, you must use forward slashes&lt;/p&gt;&lt;p&gt;# instead of backslashes (e.g., &amp;quot;c:/apache&amp;quot; instead of &amp;quot;c:\\apache&amp;quot;).&lt;/p&gt;&lt;p&gt;# If a drive letter is omitted, the drive on which Apache.exe is located&lt;/p&gt;&lt;p&gt;# will be used by default. &amp;nbsp;It is recommended that you always supply&lt;/p&gt;&lt;p&gt;# an explicit drive letter in absolute paths to avoid confusion.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# ServerRoot: The top of the directory tree under which the server&amp;#39;s&lt;/p&gt;&lt;p&gt;# configuration, error, and log files are kept.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Do not add a slash at the end of the directory path. &amp;nbsp;If you point&lt;/p&gt;&lt;p&gt;# ServerRoot at a non-local disk, be sure to point the LockFile directive&lt;/p&gt;&lt;p&gt;# at a local disk. &amp;nbsp;If you wish to share the same ServerRoot for multiple&lt;/p&gt;&lt;p&gt;# httpd daemons, you will need to change at least LockFile and PidFile.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;ServerRoot &amp;quot;E:/wamp/bin/apache/apache2.2.21&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Listen: Allows you to bind Apache to specific IP addresses and/or&lt;/p&gt;&lt;p&gt;# ports, instead of the default. See also the &amp;lt;VirtualHost&amp;gt;&lt;/p&gt;&lt;p&gt;# directive.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Change this to Listen on specific IP addresses as shown below to&amp;nbsp;&lt;/p&gt;&lt;p&gt;# prevent Apache from glomming onto all bound IP addresses.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;#Listen 12.34.56.78:80&lt;/p&gt;&lt;p&gt;Listen 80&lt;/p&gt;&lt;p&gt;Listen 8082&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Dynamic Shared Object (DSO) Support&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# To be able to use the functionality of a module which was built as a DSO you&lt;/p&gt;&lt;p&gt;# have to place corresponding `LoadModule&amp;#39; lines at this location so the&lt;/p&gt;&lt;p&gt;# directives contained in it are actually available _before_ they are used.&lt;/p&gt;&lt;p&gt;# Statically compiled modules (those listed by `httpd -l&amp;#39;) do not need&lt;/p&gt;&lt;p&gt;# to be loaded here.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Example:&lt;/p&gt;&lt;p&gt;# LoadModule foo_module modules/mod_foo.so&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;LoadModule actions_module modules/mod_actions.so&lt;/p&gt;&lt;p&gt;LoadModule alias_module modules/mod_alias.so&lt;/p&gt;&lt;p&gt;LoadModule asis_module modules/mod_asis.so&lt;/p&gt;&lt;p&gt;LoadModule auth_basic_module modules/mod_auth_basic.so&lt;/p&gt;&lt;p&gt;#LoadModule auth_digest_module modules/mod_auth_digest.so&lt;/p&gt;&lt;p&gt;#LoadModule authn_alias_module modules/mod_authn_alias.so&lt;/p&gt;&lt;p&gt;#LoadModule authn_anon_module modules/mod_authn_anon.so&lt;/p&gt;&lt;p&gt;#LoadModule authn_dbd_module modules/mod_authn_dbd.so&lt;/p&gt;&lt;p&gt;#LoadModule authn_dbm_module modules/mod_authn_dbm.so&lt;/p&gt;&lt;p&gt;LoadModule authn_default_module modules/mod_authn_default.so&lt;/p&gt;&lt;p&gt;LoadModule authn_file_module modules/mod_authn_file.so&lt;/p&gt;&lt;p&gt;#LoadModule authnz_ldap_module modules/mod_authnz_ldap.so&lt;/p&gt;&lt;p&gt;#LoadModule authz_dbm_module modules/mod_authz_dbm.so&lt;/p&gt;&lt;p&gt;LoadModule authz_default_module modules/mod_authz_default.so&lt;/p&gt;&lt;p&gt;LoadModule authz_groupfile_module modules/mod_authz_groupfile.so&lt;/p&gt;&lt;p&gt;LoadModule authz_host_module modules/mod_authz_host.so&lt;/p&gt;&lt;p&gt;#LoadModule authz_owner_module modules/mod_authz_owner.so&lt;/p&gt;&lt;p&gt;LoadModule authz_user_module modules/mod_authz_user.so&lt;/p&gt;&lt;p&gt;LoadModule autoindex_module modules/mod_autoindex.so&lt;/p&gt;&lt;p&gt;#LoadModule cache_module modules/mod_cache.so&lt;/p&gt;&lt;p&gt;#LoadModule cern_meta_module modules/mod_cern_meta.so&lt;/p&gt;&lt;p&gt;LoadModule cgi_module modules/mod_cgi.so&lt;/p&gt;&lt;p&gt;#LoadModule charset_lite_module modules/mod_charset_lite.so&lt;/p&gt;&lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;/p&gt;&lt;p&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;&lt;p&gt;#LoadModule dav_lock_module modules/mod_dav_lock.so&lt;/p&gt;&lt;p&gt;#LoadModule dbd_module modules/mod_dbd.so&lt;/p&gt;&lt;p&gt;#LoadModule deflate_module modules/mod_deflate.so&lt;/p&gt;&lt;p&gt;LoadModule dir_module modules/mod_dir.so&lt;/p&gt;&lt;p&gt;#LoadModule disk_cache_module modules/mod_disk_cache.so&lt;/p&gt;&lt;p&gt;#LoadModule dumpio_module modules/mod_dumpio.so&lt;/p&gt;&lt;p&gt;LoadModule env_module modules/mod_env.so&lt;/p&gt;&lt;p&gt;#LoadModule expires_module modules/mod_expires.so&lt;/p&gt;&lt;p&gt;#LoadModule ext_filter_module modules/mod_ext_filter.so&lt;/p&gt;&lt;p&gt;#LoadModule file_cache_module modules/mod_file_cache.so&lt;/p&gt;&lt;p&gt;#LoadModule filter_module modules/mod_filter.so&lt;/p&gt;&lt;p&gt;#LoadModule headers_module modules/mod_headers.so&lt;/p&gt;&lt;p&gt;#LoadModule ident_module modules/mod_ident.so&lt;/p&gt;&lt;p&gt;#LoadModule imagemap_module modules/mod_imagemap.so&lt;/p&gt;&lt;p&gt;LoadModule include_module modules/mod_include.so&lt;/p&gt;&lt;p&gt;#LoadModule info_module modules/mod_info.so&lt;/p&gt;&lt;p&gt;LoadModule isapi_module modules/mod_isapi.so&lt;/p&gt;&lt;p&gt;#LoadModule ldap_module modules/mod_ldap.so&lt;/p&gt;&lt;p&gt;#LoadModule logio_module modules/mod_logio.so&lt;/p&gt;&lt;p&gt;LoadModule log_config_module modules/mod_log_config.so&lt;/p&gt;&lt;p&gt;#LoadModule log_forensic_module modules/mod_log_forensic.so&lt;/p&gt;&lt;p&gt;#LoadModule mem_cache_module modules/mod_mem_cache.so&lt;/p&gt;&lt;p&gt;LoadModule mime_module modules/mod_mime.so&lt;/p&gt;&lt;p&gt;#LoadModule mime_magic_module modules/mod_mime_magic.so&lt;/p&gt;&lt;p&gt;LoadModule negotiation_module modules/mod_negotiation.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_module modules/mod_proxy.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_ajp_module modules/mod_proxy_ajp.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_balancer_module modules/mod_proxy_balancer.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_connect_module modules/mod_proxy_connect.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_ftp_module modules/mod_proxy_ftp.so&lt;/p&gt;&lt;p&gt;#LoadModule proxy_http_module modules/mod_proxy_http.so&lt;/p&gt;&lt;p&gt;LoadModule rewrite_module modules/mod_rewrite.so&lt;/p&gt;&lt;p&gt;LoadModule setenvif_module modules/mod_setenvif.so&lt;/p&gt;&lt;p&gt;#LoadModule speling_module modules/mod_speling.so&lt;/p&gt;&lt;p&gt;LoadModule ssl_module modules/mod_ssl.so&lt;/p&gt;&lt;p&gt;#LoadModule status_module modules/mod_status.so&lt;/p&gt;&lt;p&gt;#LoadModule substitute_module modules/mod_substitute.so&lt;/p&gt;&lt;p&gt;#LoadModule unique_id_module modules/mod_unique_id.so&lt;/p&gt;&lt;p&gt;#LoadModule userdir_module modules/mod_userdir.so&lt;/p&gt;&lt;p&gt;#LoadModule usertrack_module modules/mod_usertrack.so&lt;/p&gt;&lt;p&gt;#LoadModule version_module modules/mod_version.so&lt;/p&gt;&lt;p&gt;#LoadModule vhost_alias_module modules/mod_vhost_alias.so&lt;/p&gt;&lt;p&gt;LoadModule php5_module &amp;quot;E:/wamp/bin/php/php5.3.10/php5apache2_2.dll&amp;quot;&lt;/p&gt;&lt;p&gt;#LoadModule php5_module &amp;quot;E:/wamp/bin/php/php5.1.6/php5apache.dll&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule !mpm_netware_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule !mpm_winnt_module&amp;gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# If you wish httpd to run as a different user or group, you must run&lt;/p&gt;&lt;p&gt;# httpd as root initially and it will switch. &amp;nbsp;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# User/Group: The name (or #number) of the user/group to run httpd as.&lt;/p&gt;&lt;p&gt;# It is usually good practice to create a dedicated user and group for&lt;/p&gt;&lt;p&gt;# running httpd, as with most system services.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;User daemon&lt;/p&gt;&lt;p&gt;Group daemon&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# &amp;#39;Main&amp;#39; server configuration&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# The directives in this section set up the values used by the &amp;#39;main&amp;#39;&lt;/p&gt;&lt;p&gt;# server, which responds to any requests that aren&amp;#39;t handled by a&lt;/p&gt;&lt;p&gt;# &amp;lt;VirtualHost&amp;gt; definition. &amp;nbsp;These values also provide defaults for&lt;/p&gt;&lt;p&gt;# any &amp;lt;VirtualHost&amp;gt; containers you may define later in the file.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# All of these directives may appear inside &amp;lt;VirtualHost&amp;gt; containers,&lt;/p&gt;&lt;p&gt;# in which case these default settings will be overridden for the&lt;/p&gt;&lt;p&gt;# virtual host being defined.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# ServerAdmin: Your address, where problems with the server should be&lt;/p&gt;&lt;p&gt;# e-mailed. &amp;nbsp;This address appears on some server-generated pages, such&lt;/p&gt;&lt;p&gt;# as error documents. &amp;nbsp;e.g. admin@your-domain.com&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;ServerAdmin admin@localhost&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# ServerName gives the name and port that the server uses to identify itself.&lt;/p&gt;&lt;p&gt;# This can often be determined automatically, but we recommend you specify&lt;/p&gt;&lt;p&gt;# it explicitly to prevent problems during startup.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# If your host doesn&amp;#39;t have a registered DNS name, enter its IP address here.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;ServerName localhost:80&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# DocumentRoot: The directory out of which you will serve your&lt;/p&gt;&lt;p&gt;# documents. By default, all requests are taken from this directory, but&lt;/p&gt;&lt;p&gt;# symbolic links and aliases may be used to point to other locations.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;DocumentRoot &amp;quot;E:/wamp/www/&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Each directory to which Apache has access can be configured with respect&lt;/p&gt;&lt;p&gt;# to which services and features are allowed and/or disabled in that&lt;/p&gt;&lt;p&gt;# directory (and its subdirectories).&amp;nbsp;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# First, we configure the &amp;quot;default&amp;quot; to be a very restrictive set of&amp;nbsp;&lt;/p&gt;&lt;p&gt;# features. &amp;nbsp;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;Directory /&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Options FollowSymLinks&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AllowOverride None&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Order deny,allow&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #Deny from all&lt;/p&gt;&lt;p&gt;&amp;lt;/Directory&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Note that from this point forward you must specifically allow&lt;/p&gt;&lt;p&gt;# particular features to be enabled - so if something&amp;#39;s not working as&lt;/p&gt;&lt;p&gt;# you might expect, make sure that you have specifically enabled it&lt;/p&gt;&lt;p&gt;# below.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# This should be changed to whatever you set DocumentRoot to.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;Directory &amp;quot;E:/wamp/www/&amp;quot;&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Possible values for the Options directive are &amp;quot;None&amp;quot;, &amp;quot;All&amp;quot;,&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # or any combination of:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # &amp;nbsp; Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Note that &amp;quot;MultiViews&amp;quot; must be named *explicitly* --- &amp;quot;Options All&amp;quot;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # doesn&amp;#39;t give it to you.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # The Options directive is both complicated and important. &amp;nbsp;Please see&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # http://httpd.apache.org/docs/2.2/mod/core.html#options&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # for more information.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Options Indexes FollowSymLinks&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # AllowOverride controls what directives may be placed in .htaccess files.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # It can be &amp;quot;All&amp;quot;, &amp;quot;None&amp;quot;, or any combination of the keywords:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # &amp;nbsp; Options FileInfo AuthConfig Limit&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AllowOverride all&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Controls who can get stuff from this server.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# &amp;nbsp; onlineoffline tag - don&amp;#39;t remove&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Order Allow,Deny&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Allow from all&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;/Directory&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# DirectoryIndex: sets the file that Apache will serve if a directory&lt;/p&gt;&lt;p&gt;# is requested.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule dir_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; DirectoryIndex index.php index.php3 index.html index.htm&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# The following lines prevent .htaccess and .htpasswd files from being&amp;nbsp;&lt;/p&gt;&lt;p&gt;# viewed by Web clients.&amp;nbsp;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;FilesMatch &amp;quot;^\\.ht&amp;quot;&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Order allow,deny&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Deny from all&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Satisfy All&lt;/p&gt;&lt;p&gt;&amp;lt;/FilesMatch&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# ErrorLog: The location of the error log file.&lt;/p&gt;&lt;p&gt;# If you do not specify an ErrorLog directive within a &amp;lt;VirtualHost&amp;gt;&lt;/p&gt;&lt;p&gt;# container, error messages relating to that virtual host will be&lt;/p&gt;&lt;p&gt;# logged here. &amp;nbsp;If you *do* define an error logfile for a &amp;lt;VirtualHost&amp;gt;&lt;/p&gt;&lt;p&gt;# container, that host&amp;#39;s errors will be logged there and not here.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;ErrorLog &amp;quot;E:/wamp/logs/apache_error.log&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# LogLevel: Control the number of messages logged to the error_log.&lt;/p&gt;&lt;p&gt;# Possible values include: debug, info, notice, warn, error, crit,&lt;/p&gt;&lt;p&gt;# alert, emerg.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;LogLevel warn&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule log_config_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # The following directives define some format nicknames for use with&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # a CustomLog directive (see below).&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; LogFormat &amp;quot;%h %l %u %t \\&amp;quot;%r\\&amp;quot; %&amp;gt;s %b \\&amp;quot;%{Referer}i\\&amp;quot; \\&amp;quot;%{User-Agent}i\\&amp;quot;&amp;quot; combined&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; LogFormat &amp;quot;%h %l %u %t \\&amp;quot;%r\\&amp;quot; %&amp;gt;s %b&amp;quot; common&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;lt;IfModule logio_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; # You need to enable mod_logio.c to use %I and %O&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; LogFormat &amp;quot;%h %l %u %t \\&amp;quot;%r\\&amp;quot; %&amp;gt;s %b \\&amp;quot;%{Referer}i\\&amp;quot; \\&amp;quot;%{User-Agent}i\\&amp;quot; %I %O&amp;quot; combinedio&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # The location and format of the access logfile (Common Logfile Format).&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # If you do not define any access logfiles within a &amp;lt;VirtualHost&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # container, they will be logged here. &amp;nbsp;Contrariwise, if you *do*&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # define per-&amp;lt;VirtualHost&amp;gt; access logfiles, transactions will be&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # logged therein and *not* in this file.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; CustomLog &amp;quot;E:/wamp/logs/access.log&amp;quot; common&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # If you prefer a logfile with access, agent, and referer information&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # (Combined Logfile Format) you can use the following directive.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #CustomLog &amp;quot;logs/access.log&amp;quot; combined&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule alias_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Redirect: Allows you to tell clients about documents that used to&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # exist in your server&amp;#39;s namespace, but do not anymore. The client&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # will make a new request for the document at its new location.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Example:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Redirect permanent /foo http://localhost/bar&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Alias: Maps web paths into filesystem paths and is used to&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # access content that does not live under the DocumentRoot.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Example:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Alias /webpath /full/filesystem/path&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # If you include a trailing / on /webpath then the server will&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # require it to be present in the URL. &amp;nbsp;You will also likely&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # need to provide a &amp;lt;Directory&amp;gt; section to allow access to&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # the filesystem path.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # ScriptAlias: This controls which directories contain server scripts.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # ScriptAliases are essentially the same as Aliases, except that&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # documents in the target directory are treated as applications and&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # run by the server when requested rather than as documents sent to the&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # client. &amp;nbsp;The same rules about trailing &amp;quot;/&amp;quot; apply to ScriptAlias&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # directives as to Alias.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; ScriptAlias /cgi-bin/ &amp;quot;cgi-bin/&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule cgid_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # ScriptSock: On threaded servers, designate the path to the UNIX&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # socket used to communicate with the CGI daemon of mod_cgid.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #Scriptsock logs/cgisock&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# &amp;quot;C:/Program Files/Apache Software Foundation/Apache2.2/cgi-bin&amp;quot; should be changed to whatever your ScriptAliased&lt;/p&gt;&lt;p&gt;# CGI directory exists, if you have that configured.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;Directory &amp;quot;cgi-bin&amp;quot;&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AllowOverride None&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Options None&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Order allow,deny&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; Allow from all&lt;/p&gt;&lt;p&gt;&amp;lt;/Directory&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# DefaultType: the default MIME type the server will use for a document&lt;/p&gt;&lt;p&gt;# if it cannot otherwise determine one, such as from filename extensions.&lt;/p&gt;&lt;p&gt;# If your server contains mostly text or HTML documents, &amp;quot;text/plain&amp;quot; is&lt;/p&gt;&lt;p&gt;# a good value. &amp;nbsp;If most of your content is binary, such as applications&lt;/p&gt;&lt;p&gt;# or images, you may want to use &amp;quot;application/octet-stream&amp;quot; instead to&lt;/p&gt;&lt;p&gt;# keep browsers from trying to display binary files as though they are&lt;/p&gt;&lt;p&gt;# text.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;DefaultType text/plain&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule mime_module&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # TypesConfig points to the file containing the list of mappings from&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # filename extension to MIME-type.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; TypesConfig conf/mime.types&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # AddType allows you to add to or override the MIME configuration&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # file specified in TypesConfig for specific file types.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddType application/x-gzip .tgz&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # AddEncoding allows you to have certain browsers uncompress&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # information on the fly. Note: Not all browsers support this.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddEncoding x-compress .Z&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddEncoding x-gzip .gz .tgz&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # If the AddEncoding directives above are commented-out, then you&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # probably should define those extensions to indicate media types:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AddType application/x-compress .Z&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AddType application/x-gzip .gz .tgz&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AddType application/x-httpd-php .php&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; AddType application/x-httpd-php .php3&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # AddHandler allows you to map certain file extensions to &amp;quot;handlers&amp;quot;:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # actions unrelated to filetype. These can be either built into the server&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # or added with the Action directive (see below)&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # To use CGI scripts outside of ScriptAliased directories:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # (You will also need to add &amp;quot;ExecCGI&amp;quot; to the &amp;quot;Options&amp;quot; directive.)&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddHandler cgi-script .cgi&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # For type maps (negotiated resources):&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddHandler type-map var&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # Filters allow you to process content before it is sent to the client.&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # To parse .shtml files for server-side includes (SSI):&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; # (You will also need to add &amp;quot;Includes&amp;quot; to the &amp;quot;Options&amp;quot; directive.)&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddType text/html .shtml&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; #AddOutputFilter INCLUDES .shtml&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# The mod_mime_magic module allows the server to use various hints from the&lt;/p&gt;&lt;p&gt;# contents of the file itself to determine its type. &amp;nbsp;The MIMEMagicFile&lt;/p&gt;&lt;p&gt;# directive tells the module where the hint definitions are located.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;#MIMEMagicFile conf/magic&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Customizable error responses come in three flavors:&lt;/p&gt;&lt;p&gt;# 1) plain text 2) local redirects 3) external redirects&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Some examples:&lt;/p&gt;&lt;p&gt;#ErrorDocument 500 &amp;quot;The server made a boo boo.&amp;quot;&lt;/p&gt;&lt;p&gt;#ErrorDocument 404 /missing.html&lt;/p&gt;&lt;p&gt;#ErrorDocument 404 &amp;quot;/cgi-bin/missing_handler.pl&amp;quot;&lt;/p&gt;&lt;p&gt;#ErrorDocument 402 http://localhost/subscription_info.html&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# EnableMMAP and EnableSendfile: On systems that support it,&amp;nbsp;&lt;/p&gt;&lt;p&gt;# memory-mapping or the sendfile syscall is used to deliver&lt;/p&gt;&lt;p&gt;# files. &amp;nbsp;This usually improves server performance, but must&lt;/p&gt;&lt;p&gt;# be turned off when serving from networked-mounted&amp;nbsp;&lt;/p&gt;&lt;p&gt;# filesystems or if support for these functions is otherwise&lt;/p&gt;&lt;p&gt;# broken on your system.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;#EnableMMAP off&lt;/p&gt;&lt;p&gt;#EnableSendfile off&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Supplemental configuration&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# The configuration files in the conf/extra/ directory can be&amp;nbsp;&lt;/p&gt;&lt;p&gt;# included to add extra features or to modify the default configuration of&amp;nbsp;&lt;/p&gt;&lt;p&gt;# the server, or you may simply copy their contents here and change as&amp;nbsp;&lt;/p&gt;&lt;p&gt;# necessary.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Server-pool management (MPM specific)&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-mpm.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Multi-language error messages&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-multilang-errordoc.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Fancy directory listings&lt;/p&gt;&lt;p&gt;Include conf/extra/httpd-autoindex.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Language settings&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-languages.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# User home directories&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-userdir.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Real-time info on requests and configuration&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-info.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Virtual hosts&lt;/p&gt;&lt;p&gt;Include conf/extra/httpd-vhosts.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Local access to the Apache HTTP Server Manual&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-manual.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Distributed authoring and versioning (WebDAV)&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-dav.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Various default settings&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-default.conf&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;# Secure (SSL/TLS) connections&lt;/p&gt;&lt;p&gt;#Include conf/extra/httpd-ssl.conf&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;# Note: The following must must be present to support&lt;/p&gt;&lt;p&gt;# &amp;nbsp; &amp;nbsp; &amp;nbsp; starting without SSL on platforms with no /dev/random equivalent&lt;/p&gt;&lt;p&gt;# &amp;nbsp; &amp;nbsp; &amp;nbsp; but a statically compiled-in mod_ssl.&lt;/p&gt;&lt;p&gt;#&lt;/p&gt;&lt;p&gt;&amp;lt;IfModule ssl_module&amp;gt;&lt;/p&gt;&lt;p&gt;SSLRandomSeed startup builtin&lt;/p&gt;&lt;p&gt;SSLRandomSeed connect builtin&lt;/p&gt;&lt;p&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Include &amp;quot;E:/wamp/alias/*&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;lt;VirtualHost *:80&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;ServerAdmin 617667045@qq.com&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;ServerName oauth2.zhanhao.com&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;DocumentRoot &amp;quot;E:/A_C&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp;&amp;lt;Directory &amp;quot;E:/A_C&amp;quot;&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Options Indexes FollowSymLinks&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AllowOverride all&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Order Allow,Deny&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Allow from all&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;lt;/Directory&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;lt;/VirtualHost&amp;gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1449459723','1449459723','## This is the main Apache HTTP server configuration file.  It contains the# configuration directives that give the server its instructions.# See <URL:http://httpd.apache.org/docs/2.2> for detailed information.# In particular, see # <UR...') [ RunTime:0.0007s ]
+
+[ 2015-12-07T11:42:05+08:00 ] 180.166.203.26 /a/blog/update/67
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.nickname,u.realname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  WHERE a.id = '67' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: tagList /data/A_A/Application/Home/Controller/BlogController.class.php 第 227 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/de05c6e17a5e1a64d14dc5fc8fd9c6b1.php 第 249 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/de05c6e17a5e1a64d14dc5fc8fd9c6b1.php 第 254 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/de05c6e17a5e1a64d14dc5fc8fd9c6b1.php 第 295 行.
+NOTIC: [8] Undefined variable: userInfo /data/A_A/Application/Runtime/Cache/Home/de05c6e17a5e1a64d14dc5fc8fd9c6b1.php 第 298 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035585s ]
+
+[ 2015-12-07T11:42:05+08:00 ] 180.166.203.26 /a/blog/update/img/avatar3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.nickname,u.realname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  WHERE a.id = 'img' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005838s ]
+
+[ 2015-12-07T11:42:05+08:00 ] 180.166.203.26 /a/blog/update/img/avatar2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.nickname,u.realname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  WHERE a.id = 'img' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004828s ]
+
+[ 2015-12-07T11:42:05+08:00 ] 180.166.203.26 /a/blog/update/img/avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.nickname,u.realname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  WHERE a.id = 'img' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004689s ]
+
+[ 2015-12-07T11:42:17+08:00 ] 180.166.203.26 /read/67
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `db_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `db_user` WHERE ( email = "617667045@qq.com" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.*,u.nickname,u.realname FROM db_artical a LEFT JOIN db_user u on u.id = a.u_id  WHERE a.id = '67'  [ RunTime:0.0006s ]
+SQL: update db_artical set click = click + 1 where id=67 [ RunTime:0.0003s ]
+SQL: SELECT c.*,u.`nickname`,FROM_UNIXTIME(c.addtime) createtime FROM db_comment  c LEFT JOIN db_user u ON c.`u_id` = u.`id` WHERE c.a_id = 67 ORDER BY c.addtime DESC LIMIT 10 [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: tagList /data/A_A/Application/Home/Controller/BlogController.class.php 第 171 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: username /data/A_A/Application/Runtime/Cache/Home/5a8c13dffbef945706f485598daf2235.php 第 156 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023782s ]
+
+[ 2015-12-07T12:27:08+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012219s ]
+
+[ 2015-12-07T13:48:00+08:00 ] 59.56.69.195 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012068s ]
+
+[ 2015-12-07T16:00:01+08:00 ] 61.160.213.110 http://passport.tianya.cn/register/default.jsp?sourceURL=http%3A%2F%2Fbbs.tianya.cn%2F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+ERR: 非法操作:default.jsp
+
+[ 2015-12-07T16:14:06+08:00 ] 130.208.2.10 /home.asp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+ERR: 无法加载控制器:Home.asp
+
+[ 2015-12-07T17:41:58+08:00 ] 118.98.104.21 /user/soapCaller.bs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004683s ]
+
+[ 2015-12-07T18:29:38+08:00 ] 141.212.122.129 proxytest.zmap.io:80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012526s ]
+
+[ 2015-12-07T18:34:14+08:00 ] 61.135.190.197 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012436s ]
+
+[ 2015-12-07T19:03:16+08:00 ] 123.151.42.61 http://www.baidu.com/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012179s ]
+
+[ 2015-12-07T19:11:05+08:00 ] 61.135.190.198 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012118s ]
+
+[ 2015-12-07T20:11:26+08:00 ] 195.62.53.168 /css/css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载控制器:Css
+
+[ 2015-12-07T21:23:38+08:00 ] 121.42.140.239 /phpMyAdmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+ERR: 无法加载控制器:PhpMyAdmin
+
+[ 2015-12-07T21:23:38+08:00 ] 121.42.140.239 /pma/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载控制器:Pma
+
+[ 2015-12-07T21:23:38+08:00 ] 121.42.140.239 /myadmin/scripts/setup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+ERR: 无法加载控制器:Myadmin
+
+[ 2015-12-07T21:25:20+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011935s ]
+
+[ 2015-12-07T21:47:39+08:00 ] 103.242.202.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012468s ]
+
+[ 2015-12-07T22:29:33+08:00 ] 183.60.243.189 /web/icc/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载控制器:Web
+
+[ 2015-12-07T22:44:07+08:00 ] 111.20.248.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012198s ]
+
+[ 2015-12-07T23:17:13+08:00 ] 111.20.248.74 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012634s ]
+
+[ 2015-12-07T23:22:55+08:00 ] 61.135.190.69 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0009s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012812s ]
+
+[ 2015-12-07T23:59:49+08:00 ] 69.58.178.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `db_session` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `db_session` WHERE ( session_data != "" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: userinfo /data/A_A/Application/Home/Controller/BaseController.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `db_artical` [ RunTime:0.0008s ]
+SQL: SELECT a.id,a.u_id,a.title,a.img,a.sub_title,a.desc,a.tags,a.visitor,a.addtime,a.click,a.comment,u.nickname,u.realname,u.email,u.headimg FROM db_artical a LEFT JOIN db_user u ON u.id = a.u_id  ORDER BY a.addtime desc LIMIT 10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: userinfo /data/A_A/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012021s ]
+

@@ -1,0 +1,685 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    color: #000;
+    overflow-y: scoll;
+    overflow: -moz-scrollbars-vertical
+}
+
+body, button, input, select, textarea {
+    font-size: 12px;
+    font-family: arial, \5b8b\4f53, sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+em {
+    font-style: normal
+}
+
+small {
+    font-size: 12px
+}
+
+ul, ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #2c76c0;
+    outline: none;
+    transition: color .2s;
+    -moz-transition: color .2s;
+    -o-transition: color .2s;
+    -webkit-transition: color .2s
+}
+
+a:hover {
+    text-decoration: none;
+    color: #09498B
+}
+
+legend {
+    color: #000
+}
+
+fieldset, img {
+    border: 0
+}
+
+button, input, select, textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    -ms-interpolation-mode: bicubic
+}
+
+textarea {
+    resize: vertical
+}
+
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.wordwrap {
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+pre.wordwrap {
+    white-space: pre-wrap
+}
+
+.yahei {
+    font-family: "microsoft yahei", "\5FAE\8F6F\96C5\9ED1", Tahoma, Arial, Helvetica, STHeiti
+}
+
+.dotted-bottom {
+    border-bottom: dotted 1px #ddd
+}
+
+.displaynone {
+    display: none
+}
+
+html {
+    overflow-y: scroll
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+#head {
+    width: 100%
+}
+
+#content {
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 1px 3px 2px rgba(0, 0, 0, .2)
+}
+
+#content, #foot {
+    width: 980px;
+    margin: 0 auto
+}
+
+.songti {
+    font-family: \5b8b\4f53
+}
+
+.invisible {
+    visibility: hidden
+}
+
+#banner {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #e0dede;
+    background-color: #fff;
+    box-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 -1px 0 #fefcfc inset, 0 0 4px rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 2
+}
+
+#banner .banner-content {
+    width: 980px;
+    margin: 0 auto
+}
+
+#banner .banner-position {
+    position: relative;
+    height: 40px
+}
+
+#banner .banner-content .logo-img {
+    margin-top: 5px
+}
+
+#wrapper {
+    background-image: none
+}
+
+#content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #f5f7f9;
+    border: solid 1px #d1e1ef;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    width: 1050px;
+}
+
+.mod-avator {
+    width: 161px;
+    border-right: solid 1px #f4f4f4;
+    padding: 30px 0 0 42px;
+    float: left
+}
+
+.mod-avator .avator {
+    width: 118px
+}
+
+.mod-avator .avator-img {
+    padding: 4px;
+    background: #fff;
+    width: 110px;
+    position: relative
+}
+
+.mod-avator .portrait {
+    text-align: center;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    overflow: hidden
+}
+
+.mod-avator .portrait-bg {
+    width: 130px;
+    height: 125px;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    background: no-repeat;
+    background-position: -405px 0
+}
+
+.mod-avator .portrait span {
+    width: 1px;
+    overflow: hidden
+}
+
+.mod-avator .portrait .portrait-img {
+    max-width: 110px;
+    max-height: 110px
+}
+
+.mod-avator .info-status-bg {
+    width: 110px;
+    height: 16px;
+    position: absolute;
+    background-color: #000;
+    opacity: .4;
+    -moz-opacity: .4;
+    filter: alpha(opacity=40);
+    bottom: 4px
+}
+
+.mod-avator .info-online, .mod-avator .info-offline {
+    width: 100px;
+    position: absolute;
+    bottom: 4px;
+    line-height: 16px;
+    padding-left: 13px;
+    text-align: center;
+    color: #fff
+}
+
+.mod-avator .info-online {
+    background: url(/Public/images/common/online_1.png) no-repeat
+}
+
+.mod-avator .info-offline {
+    background: no-repeat;
+    background-position: 0 -371px
+}
+
+.mod-avator .btn-message {
+    height: 31px;
+    width: 68px;
+    background: no-repeat;
+    display: block;
+    margin: 0 auto;
+    background-position: 0 -112px
+}
+
+.mod-avator .btn-message:hover {
+    background: no-repeat;
+    background-position: 0 -148px
+}
+
+.mod-avator .uname {
+    text-align: center
+}
+
+.mod-avator .uname .link {
+    display: block;
+    padding: 8px 0
+}
+
+.mod-profile .user-detail-career {
+    margin-bottom: 10px
+}
+
+.profile-corp-name, .profile-corp-exp {
+    display: block
+}
+
+.profile-corp-exp {
+    padding-left: 60px
+}
+
+.mod-profile {
+    min-height: 200px;
+    _height: 200px;
+    width: 754px;
+    background: #fff;
+    float: left;
+    border-radius: 0 4px 0 0;
+    -moz-border-radius: 0 4px 0 0;
+    -webkit-border-radius: 0 4px 0 0;
+    padding: 20px 0 30px 20px
+}
+
+.mod-profile span {
+    color: #666
+}
+
+.mod-profile .split-line-top, .mod-profile .split-line {
+    height: 1px;
+    background: #f2f2f2;
+    width: 734px;
+    overflow: hidden;
+    margin: 0 0 14px
+}
+
+.mod-profile .split-line {
+    margin-top: 12px
+}
+
+.mod-profile dl {
+    display: inline-block
+}
+
+.mod-profile dt {
+    font-size: 14px;
+    height: 16px;
+    background: no-repeat;
+    color: #666;
+    vertical-align: baseline;
+    padding-left: 20px;
+    margin-bottom: 13px;
+    width: 300px;
+    background-position: 0 0
+}
+
+.mod-profile dt i {
+    color: #ccc;
+    font-size: 12px;
+    font-style: normal;
+    padding-left: 5px
+}
+
+.mod-profile dd {
+    line-height: 24px;
+    padding-left: 20px
+}
+
+.mod-profile .profile-attr {
+    color: #999;
+    width: 60px;
+    text-align: right;
+    padding-right: 10px;
+    display: inline-block
+}
+
+.userdetail-profile-basic span, .userdetail-profile-habits span {
+    max-width: 645px;
+    _width: 645px;
+    float: left
+}
+
+.userdetail-profile-basic .profile-cnt, .userdetail-profile-habits .profile-cnt {
+    padding-left: 3px;
+    word-wrap: break-word
+}
+
+.userdetail-profile-basic dd, .userdetail-profile-habits dd {
+    clear: both
+}
+
+.mod-profile .edit-btn {
+    padding-left: 20px;
+    background: transparent url(/Public/images/common/edit_btn.png) no-repeat 0 1px;
+    float: right;
+    margin-right: 20px;
+    line-height: 20px
+}
+
+.edit-link {
+    float: right;
+    display: none
+}
+
+.mod-profile dl {
+    width: 734px
+}
+
+.mod-profile dl:hover .edit-link {
+    display: block
+}
+
+.split-top {
+    height: 10px;
+    visibility: hidden;
+    overflow: hidden
+}
+
+.mod-head {
+    padding-top: 220px;
+    position: relative;
+    color: #fff;
+    height: 100px;
+    z-index: 1;
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 -3px 3px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 -3px 3px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 -3px 3px 2px rgba(0, 0, 0, .2)
+}
+
+.mod-head .info-left {
+    width: 130px;
+    height: 125px;
+    float: left;
+    _display: inline;
+    position: relative;
+    margin-right: 24px;
+    margin-left: 20px;
+    margin: 10px 20px 0 17px
+}
+
+.detail-link {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff
+}
+
+.detail-link:visited, .detail-link:hover {
+    color: #fff
+}
+
+.mod-head .info-left .portrait {
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    padding: 6px 10px 9px;
+    margin-bottom: -30px;
+    background: url(../img/portrait_bg_947f4316.png) no-repeat;
+    _background: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://pr.bdimg.com/static/princess/img/portrait_bg_947f4316.png", sizingMethod="crop")
+}
+
+.mod-head .info-left .portrait span {
+    width: 1px;
+    overflow: hidden
+}
+
+.mod-head .info-left .portrait .portrait-img {
+    max-width: 110px;
+    max-height: 110px
+}
+
+.mod-head .info-left .info-status-bg {
+    width: 110px;
+    height: 16px;
+    position: absolute;
+    background-color: #000;
+    opacity: .4;
+    -moz-opacity: .4;
+    filter: alpha(opacity=40);
+    bottom: 4px
+}
+
+.mod-head .info-online, .mod-head .info-offline {
+    width: 100px;
+    position: absolute;
+    bottom: 4px;
+    line-height: 16px;
+    padding-left: 13px;
+    text-align: center;
+    color: #fff
+}
+
+.mod-head .info-online {
+    background: url(/Public/images/common/online_1.png) no-repeat
+}
+
+.mod-head .info-offline {
+    background: no-repeat;
+    background-position: 0 -371px
+}
+
+.mod-head .info-right {
+    float: left;
+    width: 780px;
+    margin-top: 15px
+}
+
+.mod-head .user-name h2 {
+    font-size: 20px;
+    font-weight: normal;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    margin-right: 7px
+}
+
+.mod-head .btn-message {
+    height: 23px;
+    width: 52px;
+    background: url(../img/msg_btn_05ef1418.png) no-repeat;
+    display: block;
+    margin-top: 6px;
+    float: left
+}
+
+.mod-head .btn-message:hover {
+    background: url(../img/msg_btn_hover_f21e4f54.png) no-repeat;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.mod-head .personal-url {
+    height: 23px;
+    line-height: 23px
+}
+
+.mod-head .personal-url .url {
+    padding-top: 6px
+}
+
+.mod-head .user-info {
+    width: 780px;
+    overflow: hidden
+}
+
+.mod-head .user-info .info {
+    float: left;
+    line-height: 23px;
+    height: 23px;
+    margin-right: 18px
+}
+
+.mod-head .more-info {
+    line-height: 39px;
+    float: left
+}
+
+.online {
+    background: url(/Public/images/common/online_1.png) no-repeat;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 17px
+}
+
+.offline {
+    background: no-repeat;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 17px;
+    background-position: 0 -344px
+}
+
+.info-left .picicon {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    bottom: 9px;
+    right: 10px
+}
+
+.skin-setting-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    _bottom: 34px;
+    padding: 4px 5px 3px 21px;
+    background: url(../img/btn_setting_ee7c850f.png) no-repeat 0 0;
+    color: #555;
+    line-height: 14px
+}
+
+.mod-banner {
+    float: right;
+    padding-top: 15px;
+    color: #999;
+    position: relative;
+    z-index: 1
+}
+
+.mod-banner a {
+    margin: 0 5px
+}
+
+.mod-banner .user-name {
+    font-weight: bold;
+    text-decoration: none
+}
+
+.mod-banner .user-name .icon {
+    border-style: solid dashed dashed;
+    border-width: 4px 4px 0;
+    border-color: transparent;
+    border-top-color: #2c76c0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    top: -2px
+}
+
+.mod-banner .username-menu {
+    position: absolute;
+    width: 60px;
+    border: 1px solid #9b9b9b;
+    right: 105px;
+    top: 32px;
+    box-shadow: 1px 1px 2px #ccc;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
+    -moz-box-shadow: 1px 1px 2px #ccc;
+    z-index: 1
+}
+
+.mod-banner .username-menu a {
+    background-color: #fff;
+    display: block;
+    margin: 0;
+    line-height: 25px;
+    height: 25px;
+    padding-left: 6px;
+    text-decoration: none;
+    width: 54px
+}
+
+.mod-banner .username-menu a:hover {
+    background-color: #d9e1f6;
+    display: block
+}
+
+.mod-banner .inactive {
+    display: none
+}
+
+.mod-banner .active {
+    display: block
+}
+
+.username-menu .bdown {
+    border-bottom: 1px solid #ebebeb
+}
+
+.mod-banner .itb_i_small {
+    font-size: 14px;
+    font-family: '宋体';
+    font-weight: bold
+}
+
+.mod-footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #2C76C0
+}
+
+.mod-footer .bottom-line1 {
+    margin-bottom: 5px
+}
+
+.s-bottom-copyright {
+    background: no-repeat 0 0;
+    font-size: 15px;
+    height: 20px;
+    width: 40px;
+    background-position: 0 -56px
+}
+
+.bottom-line2 a {
+    text-decoration: none
+}
+
+.mod-avator .portrait-bg, .mod-profile dt {
+    background-image: url(/Public/images/common/online_1.png)
+}
+
+.mod-avator .info-offline, .mod-head .info-offline, .offline, .s-bottom-copyright {
+    background-image: url("../img/sprite_gray_sprites_0_f0a53144.png")
+}
+
+.mod-avator .btn-message, .mod-avator .btn-message:hover {
+    background-image: url("../img/sprite_blue_sprites_0_d371325c.png")
+}
+
+#content, .mod-profile {
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box
+}

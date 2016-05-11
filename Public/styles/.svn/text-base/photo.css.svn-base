@@ -1,0 +1,1935 @@
+/*
+html {
+    height: 100%;
+    overflow: hidden;
+    *overflow-y: scroll
+}
+
+body {
+    background: #f5f4f5;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100%;
+    *overflow-y: hidden;
+    zoom: 1
+}
+
+body, body * {
+    padding: 0;
+    margin: 0
+}
+*/
+.show-img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+}
+
+
+ul, ul li {
+    list-style: none
+}
+
+.bd_home_wrapper, .wrapper_main_box {
+    width: 100%;
+    height: 100%
+}
+
+.wrapper_userinfo_box {
+    width: 100%;
+    position: relative;
+    height: 32px
+}
+
+.wrapper_content_box {
+    width: 100%;
+    padding-bottom: 50px
+}
+
+.wrapper_con_ret {
+    position: relative
+}
+
+.wrapper_con_ret .wrapper_footer_box {
+    bottom: -15px
+}
+
+.wrapper_head_box {
+    width: 100%
+}
+
+.wrapper_head_box .mod-header {
+    width: 860px;
+    min-width: 860px;
+    margin: 0 auto
+}
+
+.wrapper_dot_box {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 40px;
+    height: 39px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+    z-index: 2000
+}
+
+.wrapper_dot_box .dot_left_top, .wrapper_dot_box .dot_left_bottom, .wrapper_dot_box .dot_right_top, .wrapper_dot_box .dot_right_bottom {
+    position: absolute;
+    width: 16px;
+    height: 16px
+}
+
+.wrapper_dot_box .dot_left_top {
+    top: 0;
+    left: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_left_top_2957055.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_left_top_2957055.png");
+    _background: 0 0
+}
+
+.wrapper_dot_box .dot_left_bottom {
+    bottom: 0;
+    left: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_left_bottom_cdd4bd2.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_left_bottom_cdd4bd2.png");
+    _background: 0 0
+}
+
+.wrapper_dot_box .dot_right_top {
+    top: 0;
+    right: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_right_top_31ac5e3.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_right_top_31ac5e3.png");
+    _background: 0 0
+}
+
+.wrapper_dot_box .dot_right_bottom {
+    bottom: 0;
+    right: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_right_bottom_d315872.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_right_bottom_d315872.png");
+    _background: 0 0
+}
+
+.wrapper_dot_box .dot_center_info {
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-image: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_info_bg_4ed2025.png);
+    _bakcground-image: none;
+    _background-color: #fff
+}
+
+.wrapper_dot_box .dot_center_info .dot_info_link, .wrapper_dot_box .dot_center_info .dot_info_link:hover {
+    text-decoration: none;
+    color: #404143;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    line-height: 18px;
+    font-family: "microsoft yahei", "宋体";
+    font-size: 12px
+}
+
+.wrapper_dot_box .dot_center_circle {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_center_circle_e753722.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_center_circle_e753722.png");
+    _background: 0 0
+}
+
+.dot_white .dot_left_top, .dot_white .dot_left_bottom, .dot_white .dot_right_top, .dot_white .dot_right_bottom {
+    position: absolute;
+    width: 16px;
+    height: 16px
+}
+
+.dot_white .dot_left_top {
+    top: 0;
+    left: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_left_top_2957055.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_left_top_2957055.png");
+    _background: 0 0
+}
+
+.dot_white .dot_left_bottom {
+    bottom: 0;
+    left: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_left_bottom_cdd4bd2.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_left_bottom_cdd4bd2.png");
+    _background: 0 0
+}
+
+.dot_white .dot_right_top {
+    top: 0;
+    right: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_right_top_31ac5e3.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_right_top_31ac5e3.png");
+    _background: 0 0
+}
+
+.dot_white .dot_right_bottom {
+    bottom: 0;
+    right: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_right_bottom_d315872.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_right_bottom_d315872.png");
+    _background: 0 0
+}
+
+.dot_white .dot_center_info {
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-image: url(http://img0.bdstatic.com/static/home/widget/dot/images/white/dot_info_bg_4ed2025.png);
+    _bakcground-image: none;
+    _background-color: #fff
+}
+
+.dot_white .dot_center_info .dot_info_link, .dot_white .dot_center_info .dot_info_link:hover {
+    text-decoration: none;
+    color: #404143;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    line-height: 18px;
+    font-family: "microsoft yahei", "宋体";
+    font-size: 12px
+}
+
+.dot_white .dot_center_circle {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_center_circle_e753722.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/white/dot_center_circle_e753722.png");
+    _background: 0 0
+}
+
+.dot_black .dot_left_top, .dot_black .dot_left_bottom, .dot_black .dot_right_top, .dot_black .dot_right_bottom {
+    position: absolute;
+    width: 16px;
+    height: 16px
+}
+
+.dot_black .dot_left_top {
+    top: 0;
+    left: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/black/dot_left_top_021fc13.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/black/dot_left_top_021fc13.png");
+    _background: 0 0
+}
+
+.dot_black .dot_left_bottom {
+    bottom: 0;
+    left: 0;
+    background: url(http://img0.bdstatic.com/static/home/widget/dot/images/black/dot_left_bottom_90a298e.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/dot/images/black/dot_left_bottom_90a298e.png");
+    _background: 0 0
+}
+
+.dot_black .dot_right_top {
+    top: 0;
+    right: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_right_top_e087802.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_right_top_e087802.png");
+    _background: 0 0
+}
+
+.dot_black .dot_right_bottom {
+    bottom: 0;
+    right: 0;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_right_bottom_3ac25a6.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_right_bottom_3ac25a6.png");
+    _background: 0 0
+}
+
+.dot_black .dot_center_info {
+    width: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-image: url(http://img0.bdstatic.com/static/home/widget/dot/images/black/dot_info_bg_886f2d6.png);
+    _bakcground-image: none;
+    _background-color: #fff
+}
+
+.dot_black .dot_center_info .dot_info_link, .dot_black .dot_center_info .dot_info_link:hover {
+    text-decoration: none;
+    color: #f7f7f7;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    line-height: 18px;
+    font-family: "microsoft yahei", "宋体";
+    font-size: 12px
+}
+
+.dot_black .dot_center_circle {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url(http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_center_circle_026ea7a.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/dot/images/black/dot_center_circle_026ea7a.png");
+    _background: 0 0
+}
+
+.wrapper_festival_box {
+    width: 250px;
+    margin: 0 auto;
+    z-index: 2110;
+    position: absolute;
+    left: 50%;
+    margin-left: -133px;
+    top: 0;
+    height: 32px
+}
+
+.wrapper-newyear-box {
+    position: absolute;
+    top: -631px;
+    left: 0;
+    z-index: 2120;
+    width: 250px;
+    height: 208px;
+    display: none;
+    background: url(http://img0.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_line_bg_082fd1a.gif) 0 0 repeat-y
+}
+
+.wrapper-newyear-box .new-year-luck-box {
+    position: absolute;
+    width: 249px;
+    height: 249px;
+    left: 0;
+    bottom: -249px;
+    cursor: pointer
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-luck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 249px;
+    height: 249px;
+    background: url(http://img0.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_luck_normal_483a562.png) 0 0 repeat-y;
+    _background: url(http://img2.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_luck_normal_ad04591.gif) 0 0 repeat-y
+}
+
+.luck-rotate {
+    -webkit-animation: luckgo 2s .8s linear 1 alternate;
+    -moz-animation: luckgo 2s .8s linear 1 alternate;
+    -o-animation: luckgo 2s .8s linear 1 alternate;
+    -ms-animation: luckgo 2s .8s linear 1 alternate;
+    -webkit-backface-visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible
+}
+
+@-webkit-keyframes luckgo {
+    0% {
+        -webkit-transform: perspective(500px) rotateY(0deg)
+    }
+    100% {
+        -webkit-transform: perspective(500px) rotateY(360deg)
+    }
+}
+
+@-moz-keyframes luckgo {
+    0% {
+        -moz-transform: perspective(500px) rotateY(0deg)
+    }
+    100% {
+        -moz-transform: perspective(500px) rotateY(360deg)
+    }
+}
+
+@-o-keyframes luckgo {
+    0% {
+        -moz-transform: perspective(500px) rotateY(0deg)
+    }
+    100% {
+        -moz-transform: perspective(500px) rotateY(360deg)
+    }
+}
+
+@-ms-keyframes luckgo {
+    0% {
+        -moz-transform: perspective(500px) rotateY(0deg)
+    }
+    100% {
+        -moz-transform: perspective(500px) rotateY(360deg)
+    }
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-arrow, .wrapper-newyear-box .new-year-luck-box .new-year-info-close, .wrapper-newyear-box .new-year-luck-box .new-year-info-msg {
+    position: absolute;
+    background: url(http://img0.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_luck_other_8a7a981.png) 0 0 no-repeat;
+    _background: url(http://img0.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_luck_other_fefe7d9.gif) 0 0 no-repeat;
+    display: none
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-arrow {
+    width: 22px;
+    height: 0;
+    left: 206px;
+    top: 27px;
+    background-position: -14px -48px
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-close {
+    width: 31px;
+    height: 31px;
+    left: 391px;
+    top: 2px;
+    background-position: -70px -58px;
+    cursor: pointer
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-msg {
+    width: 192px;
+    height: 31px;
+    left: 184px;
+    top: -1px;
+    background-position: 0 0
+}
+
+.wrapper-newyear-box .new-year-luck-box .new-year-info-spike {
+    position: absolute;
+    width: 26px;
+    height: 174px;
+    background: url(http://img0.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_lines_orgin_a973129.png) 0 0 no-repeat;
+    _background: url(http://img1.bdstatic.com/static/home/widget/festival/newyear/images/bd_newyear_lines_orgin_d600954.gif) 0 0 no-repeat;
+    bottom: -171px;
+    left: 112px
+}
+
+.wrapper_content_box .wrapper_footer_box {
+    width: 100%;
+    background: 0 0;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    overflow: hidden;
+    padding-bottom: 6px;
+    zoom: 1
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer {
+    width: 360px;
+    margin: 0 auto;
+    background: 0 0;
+    color: #666
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer div {
+    color: #666;
+    height: 18px;
+    line-height: 18px
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer a {
+    color: #666;
+    text-decoration: none
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer a:hover {
+    color: #666;
+    text-decoration: none
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer #ft {
+    color: #666;
+    padding-bottom: 8px;
+    _padding-top: 10px
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer #ft a {
+    color: #666;
+    text-decoration: none
+}
+
+.wrapper_content_box .wrapper_footer_box .mod-footer #ft a:hover {
+    color: #666;
+    text-decoration: underline
+}
+
+.wrapper_imgfrom_box {
+    margin: 8px 0 0;
+    width: 220px;
+    background: 0 0;
+    position: absolute;
+    left: 115px;
+    bottom: 2px;
+    _bottom: 9px;
+    overflow: hidden;
+    padding-bottom: 8px;
+    zoom: 1;
+    color: #666
+}
+
+.wrapper_imgfrom_box .skin_from_link, .wrapper_imgfrom_box .skin_from_link:active, .wrapper_imgfrom_box .skin_from_link:visited {
+    color: #666;
+    text-decoration: none
+}
+
+.wrapper_imgfrom_box .skin_from_link:hover {
+    color: #666;
+    text-decoration: underline
+}
+
+.skin_from_text, .skin_from_text:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: default
+}
+
+.mar75 .wrapper_content_box .wrapper_detail_box {
+    margin-top: 75px
+}
+
+.mar95 .wrapper_content_box .wrapper_detail_box {
+    margin-top: 95px
+}
+
+.wrapper_content_box .detail_mar {
+    margin-top: 95px
+}
+
+.wrapper_content_box .wrapper_detail_box {
+    width: 860px;
+    position: relative;
+    margin: 0 auto;
+    height: 310px;
+    margin-top: 75px;
+    z-index: 40
+}
+
+.wrapper_content_box .img_area_container_box {
+    width: 860px;
+    height: 310px;
+    position: absolute;
+    z-index: 60;
+    top: 0;
+    left: 0
+}
+
+.wrapper_content_box .img_area_container_box .img_area_inner {
+    width: 850px;
+    height: 290px;
+    padding: 10px 0 0 10px
+}
+
+.img_area_container_box .img_area_inner .img_single_box {
+    width: 170px;
+    height: 140px;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px
+}
+
+.img_area_inner .img_single_box .img_link_layer {
+    width: 160px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    display: block
+}
+
+.img_area_inner .img_single_box .img_link_layer .img_instr_layer, .img_area_inner .img_single_box .img_link_layer .img_mask_layer, .img_area_inner .img_single_box .img_link_layer .img_pic_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_instr_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_mask_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_pic_layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 160px
+}
+
+.img_area_inner .img_single_box .img_link_layer .img_instr_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_instr_layer {
+    height: 24px;
+    text-indent: 10px;
+    color: #f4f4f4;
+    font-size: 14px;
+    z-index: 100;
+    font-family: "microsoft yahei";
+    cursor: pointer
+}
+
+.img_area_inner .img_single_box .img_link_layer .img_mask_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_mask_layer {
+    height: 40px;
+    z-index: 99;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+    background: url(http://img2.bdstatic.com/static/home/widget/imgarea/images/home_img_mask_bg_1533098.png) repeat-x;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/img/image/home_img_mask_bg.png");
+    _background: 0 0
+}
+
+.img_area_inner .img_single_box .img_link_layer:hover .img_mask_layer {
+}
+
+.img_area_inner .img_single_box .img_link_layer .img_cover_layer, .img_area_inner .img_single_box .img_link_layer:hover .img_cover_layer {
+    width: 160px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 98;
+    display: none;
+    display: block \9
+}
+
+.img_area_inner .img_single_box .img_link_layer:hover .img_cover_layer {
+    opacity: .2;
+    filter: alpha(opacity=20);
+    background: #fff;
+    _background: 0 0;
+    display: none;
+    display: block \9
+}
+
+.img_area_inner .img_single_box .img_link_layer .img_pic_layer {
+    top: 0;
+    height: 140px;
+    border: 0;
+    z-index: 97;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -o-transition: transform .3s;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -moz-perspective: 1000;
+    -moz-backface-visibility: hidden;
+    -o-perspective: 1000;
+    -o-backface-visibility: hidden
+}
+
+.img_area_inner .img_single_box .img_link_layer:hover .img_pic_layer {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05)
+}
+
+.wrapper_content_box .img_area_background_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 860px;
+    height: 310px;
+    background: #fff;
+    opacity: .1;
+    filter: Alpha(opacity=10);
+    zoom: 1;
+    z-index: 9;
+    overflow: hidden;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/img/image/img_area_bg.png");
+    _background: 0 0;
+    _background: 0 0
+}
+
+.wrapper_snow_tree_left {
+    position: absolute;
+    top: -239px;
+    left: -446px;
+    width: 570px;
+    height: 642px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img0.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_left_e44ca05.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_left_e44ca05.png");
+    _background: 0 0
+}
+
+.wrapper_snow_tree_top {
+    position: absolute;
+    top: -310px;
+    left: 74px;
+    width: 203px;
+    height: 188px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img1.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_top_9eb78b2.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_top_9eb78b2.png");
+    _background: 0 0
+}
+
+.wrapper_snow_tree_right {
+    position: absolute;
+    top: -262px;
+    left: 754px;
+    width: 352px;
+    height: 381px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img0.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_right_9a84d1f.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/merych/images/bd_home_bg_tree_right_9a84d1f.png");
+    _background: 0 0
+}
+
+.wrapper_snow_tree_left_one {
+    position: absolute;
+    top: 67px;
+    left: -387px;
+    width: 132px;
+    height: 144px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img0.bdstatic.com/static/home/widget/merych/images/tree_left_1_f3da0f1.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/merych/images/tree_left_1_f3da0f1.png");
+    _background: 0 0;
+    -webkit-animation: ftree1 12s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree1 12s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree1 12s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree1 12s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree1 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(60deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree1 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(60deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree1 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(60deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree1 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(60deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_left_two {
+    position: absolute;
+    top: 99px;
+    left: -183px;
+    width: 273px;
+    height: 149px;
+    cursor: default;
+    overflow: hidden;
+    z-index: -1;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_2_931bfea.png);
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_2_931bfea.png");
+    _background: 0 0;
+    -webkit-animation: ftree2 16s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree2 16s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree2 16s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree2 16s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree2 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree2 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(30deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree2 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(30deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree2 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(30deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_left_three {
+    position: absolute;
+    top: -52px;
+    left: -350px;
+    width: 162px;
+    height: 128px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img1.bdstatic.com/static/home/widget/merych/images/tree_left_3_81c35a4.png);
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/merych/images/tree_left_3_81c35a4.png");
+    _background: 0 0;
+    -webkit-animation: ftree3 18s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree3 18s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree3 18s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree3 18s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree3 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree3 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(30deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree3 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(30deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree3 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(30deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_left_four {
+    position: absolute;
+    top: -51px;
+    left: -164px;
+    width: 112px;
+    height: 130px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_4_549c6bf.png);
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_4_549c6bf.png");
+    _background: 0 0;
+    -webkit-animation: ftree4 21s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree4 21s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree4 21s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree4 21s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree4 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree4 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(30deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree4 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(30deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree4 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(30deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_left_five {
+    position: absolute;
+    top: -91px;
+    left: -171px;
+    width: 68px;
+    height: 102px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 30;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_5_b89632b.png);
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_5_b89632b.png");
+    _background: 0 0;
+    -webkit-animation: ftree5 22s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree5 22s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree5 22s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree5 22s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree5 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree5 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree5 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree5 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_left_six {
+    position: absolute;
+    top: -176px;
+    left: -189px;
+    width: 100px;
+    height: 120px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_6_eb032f8.png);
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_left_6_eb032f8.png");
+    _background: 0 0;
+    -webkit-animation: ftree6 24s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: ftree6 24s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: ftree6 24s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: ftree6 24s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes ftree6 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes ftree6 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes ftree6 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes ftree6 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_one {
+    position: absolute;
+    top: -73px;
+    left: 864px;
+    width: 70px;
+    height: 104px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img1.bdstatic.com/static/home/widget/merych/images/tree_right_1_f3c29c5.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="images/tree_right_one.png");
+    _background: 0 0;
+    -webkit-animation: rtree1 22s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree1 22s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree1 22s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree1 22s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree1 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree1 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree1 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree1 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_two {
+    position: absolute;
+    top: -67px;
+    left: 927px;
+    width: 172px;
+    height: 96px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_right_2_458ae94.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_right_2_458ae94.png");
+    _background: 0 0;
+    -webkit-animation: rtree2 18s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree2 18s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree2 18s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree2 18s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree2 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree2 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree2 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree2 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_three {
+    position: absolute;
+    top: -150px;
+    left: 831px;
+    width: 102px;
+    height: 80px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img0.bdstatic.com/static/home/widget/merych/images/tree_right_3_ff8f4bb.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/merych/images/tree_right_3_ff8f4bb.png");
+    _background: 0 0;
+    -webkit-animation: rtree3 24s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree3 24s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree3 24s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree3 24s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree3 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree3 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree3 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree3 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_four {
+    position: absolute;
+    top: -196px;
+    left: 932px;
+    width: 108px;
+    height: 89px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img1.bdstatic.com/static/home/widget/merych/images/tree_right_4_3bb8a8a.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img1.bdstatic.com/static/home/widget/merych/images/tree_right_4_3bb8a8a.png");
+    _background: 0 0;
+    -webkit-animation: rtree4 24s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree4 24s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree4 24s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree4 24s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree4 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(50deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree4 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(50deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree4 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(50deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree4 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(50deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_five {
+    position: absolute;
+    top: -172px;
+    left: 922px;
+    width: 45px;
+    height: 68px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img0.bdstatic.com/static/home/widget/merych/images/tree_right_5_ebd1275.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img0.bdstatic.com/static/home/widget/merych/images/tree_right_5_ebd1275.png");
+    _background: 0 0;
+    -webkit-animation: rtree5 16s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree5 16s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree5 16s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree5 16s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree5 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-30deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree5 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-30deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree5 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-30deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree5 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-30deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_snow_tree_right_six {
+    position: absolute;
+    top: -285px;
+    left: 898px;
+    width: 56px;
+    height: 88px;
+    cursor: default;
+    overflow: hidden;
+    z-index: 20;
+    background: url(http://img2.bdstatic.com/static/home/widget/merych/images/tree_right_6_8593f24.png) no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://img2.bdstatic.com/static/home/widget/merych/images/tree_right_6_8593f24.png");
+    _background: 0 0;
+    -webkit-animation: rtree6 24s linear infinite;
+    -webkit-transform-origin: center center;
+    -moz-animation: rtree6 24s linear infinite;
+    -moz-transform-origin: center center;
+    -o-animation: rtree6 24s linear infinite;
+    -o-transform-origin: center center;
+    -ms-animation: rtree6 24s linear infinite;
+    -ms-transform-origin: center center
+}
+
+@-webkit-keyframes rtree6 {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(-20deg)
+    }
+    100% {
+        -webkit-transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes rtree6 {
+    0% {
+        -moz-transform: rotate(0deg)
+    }
+    50% {
+        -moz-transform: rotate(-20deg)
+    }
+    100% {
+        -moz-transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes rtree6 {
+    0% {
+        -o-transform: rotate(0deg)
+    }
+    50% {
+        -o-transform: rotate(-20deg)
+    }
+    100% {
+        -o-transform: rotate(0deg)
+    }
+}
+
+@-ms-keyframes rtree6 {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    50% {
+        -ms-transform: rotate(-20deg)
+    }
+    100% {
+        -ms-transform: rotate(0deg)
+    }
+}
+
+.wrapper_share_site_box {
+    bottom: 3px;
+    _bottom: 10px;
+    position: absolute;
+    left: 50px;
+    width: 56px;
+    height: 28px
+}
+
+.wrapper_share_site_box .share_ctrl_box, .wrapper_share_site_box .share_kinds_site .share_to_site {
+    background: url(http://img2.bdstatic.com/static/home/widget/share/images/guide_share_icon_6a3389f.png) no-repeat;
+    _background: url(http://img0.bdstatic.com/static/home/widget/share/images/guide_share_icon_4cf3590.gif) no-repeat
+}
+
+.wrapper_share_site_box .share_ctrl_box {
+    width: 35px;
+    height: 28px;
+    background-position: -88px -45px;
+    color: #fff;
+    padding-left: 32px;
+    line-height: 28px;
+    cursor: pointer;
+    display: none
+}
+
+.wrapper_share_site_box .share_ctrl_close {
+    background-position: -3px -45px
+}
+
+.wrapper_share_site_box .share_ctrl_box span {
+    color: #666
+}
+
+.wrapper_share_site_box .share_kinds_site {
+    width: 160px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    overflow: hidden
+}
+
+.wrapper_share_site_box .share_kinds_site .share_to_site {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 0
+}
+
+.wrapper_share_site_box .shares {
+    -webkit-animation: toshare 300ms ease 1 forwards;
+    -webkit-animation-duration: 800ms;
+    -moz-animation: toshare 300ms ease 1 forwards;
+    -moz-animation-duration: 800ms;
+    -o-animation: toshare 300ms ease 1 forwards;
+    -o-animation-duration: 800ms;
+    -ms-animation: toshare 300ms ease 1 forwards;
+    -ms-animation-duration: 800ms
+}
+
+.wrapper_share_site_box .shares .share_to_site {
+    -webkit-animation: 300ms ease 1 forwards;
+    -webkit-animation-duration: 800ms;
+    -moz-animation: 300ms ease 1 forwards;
+    -moz-animation-duration: 800ms;
+    -o-animation: 300ms ease 1 forwards;
+    -o-animation-duration: 800ms;
+    -ms-animation: 300ms ease 1 forwards;
+    -ms-animation-duration: 800ms
+}
+
+@-webkit-keyframes toshare {
+    0% {
+        bottom: 28px;
+        width: 35px
+    }
+    50% {
+        bottom: 40px;
+        width: 35px
+    }
+    100% {
+        bottom: 40px;
+        width: 160px
+    }
+}
+
+@-moz-keyframes toshare {
+    0% {
+        bottom: 28px;
+        width: 35px
+    }
+    50% {
+        bottom: 40px;
+        width: 35px
+    }
+    100% {
+        bottom: 40px;
+        width: 160px
+    }
+}
+
+@-o-keyframes toshare {
+    0% {
+        bottom: 28px;
+        width: 35px
+    }
+    50% {
+        bottom: 40px;
+        width: 35px
+    }
+    100% {
+        bottom: 40px;
+        width: 160px
+    }
+}
+
+@-ms-keyframes toshare {
+    0% {
+        bottom: 28px;
+        width: 35px
+    }
+    50% {
+        bottom: 40px;
+        width: 35px
+    }
+    100% {
+        bottom: 40px;
+        width: 160px
+    }
+}
+
+.wrapper_share_site_box .share_kinds_site .share_to_weibo {
+    background-position: -5px -3px;
+    left: 0
+}
+
+@-webkit-keyframes toweibo {
+}
+
+.wrapper_share_site_box .share_kinds_site .share_to_qqzone {
+    background-position: -45px -3px;
+    left: 38px;
+    -webkit-animation-delay: 500ms;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-name: toqqzone;
+    -moz-animation-delay: 500ms;
+    -moz-animation-duration: 400ms;
+    -moz-animation-name: toqqzone;
+    -o-animation-delay: 500ms;
+    -o-animation-duration: 400ms;
+    -o-animation-name: toqqzone;
+    -ms-animation-delay: 500ms;
+    -ms-animation-duration: 400ms;
+    -ms-animation-name: toqqzone
+}
+
+@-webkit-keyframes toqqzone {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 38px
+    }
+}
+
+@-moz-keyframes toqqzone {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 38px
+    }
+}
+
+@-o-keyframes toqqzone {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 38px
+    }
+}
+
+@-ms-keyframes toqqzone {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 38px
+    }
+}
+
+.wrapper_share_site_box .share_kinds_site .share_to_renren {
+    background-position: -87px -3px;
+    left: 76px;
+    -webkit-animation-delay: 450ms;
+    -webkit-animation-duration: 350ms;
+    -webkit-animation-name: torenren;
+    -moz-animation-delay: 450ms;
+    -moz-animation-duration: 350ms;
+    -moz-animation-name: torenren;
+    -o-animation-delay: 450ms;
+    -o-animation-duration: 350ms;
+    -o-animation-name: torenren;
+    -ms-animation-delay: 450ms;
+    -ms-animation-duration: 350ms;
+    -ms-animation-name: torenren
+}
+
+@-webkit-keyframes torenren {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 76px
+    }
+}
+
+@-moz-keyframes torenren {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 76px
+    }
+}
+
+@-o-keyframes torenren {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 76px
+    }
+}
+
+@-ms-keyframes torenren {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 76px
+    }
+}
+
+.wrapper_share_site_box .share_kinds_site .share_to_douban {
+    background-position: -128px -3px;
+    left: 114px;
+    -webkit-animation-delay: 400ms;
+    -webkit-animation-duration: 300ms;
+    -webkit-animation-name: todouban;
+    -moz-animation-delay: 400ms;
+    -moz-animation-duration: 300ms;
+    -moz-animation-name: todouban;
+    -o-animation-delay: 400ms;
+    -o-animation-duration: 300ms;
+    -o-animation-name: todouban;
+    -ms-animation-delay: 400ms;
+    -ms-animation-duration: 300ms;
+    -ms-animation-name: todouban
+}
+
+@-webkit-keyframes todouban {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 114px
+    }
+}
+
+@-moz-keyframes todouban {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 114px
+    }
+}
+
+@-o-keyframes todouban {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 114px
+    }
+}
+
+@-ms-keyframes todouban {
+    0% {
+        left: 0
+    }
+    100% {
+        left: 114px
+    }
+}
+
+.wrapper_skin_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom: 1
+}
+
+.wrapper_skin_box .wrapper_skin_img {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: fixed
+}
+
+.wrapp_skin_hack {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+.wrapper_fresher_guide_drag, .wrapper_fresher_guide_try, .wrapper_fresher_guide_drag .guide_drag_arrow, .wrapper_fresher_guide_drag .guide_drag_close, .wrapper_fresher_guide_try .guide_try_arrow, .wrapper_fresher_guide_try .guide_try_close {
+    background: url(http://img1.bdstatic.com/static/home/widget/ui/guide/images/fresher_guide_detail_bg_fe9733d.png) 0 0 no-repeat;
+    _background: url(http://img0.bdstatic.com/static/home/widget/ui/guide/images/fresher_guide_detail_bg_ie6_f7d8da0.png) 0 0 no-repeat
+}
+
+.wrapper_fresher_guide_drag {
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    background-position: 0 0;
+    left: 100px;
+    top: -69px
+}
+
+.mar95 .wrapper_fresher_guide_drag {
+    top: -89px
+}
+
+.wrapper_fresher_guide_drag .guide_drag_arrow {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-position: -68px -126px;
+    left: -20px;
+    top: 32px
+}
+
+.mar95 .wrapper_fresher_guide_drag .guide_drag_arrow {
+    background-position: 0 -116px;
+    width: 45px;
+    height: 56px
+}
+
+.wrapper_fresher_guide_drag .guide_drag_close {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    background-position: -210px -130px;
+    right: -21px;
+    top: 6px;
+    cursor: pointer
+}
+
+.wrapper_fresher_guide_try {
+    position: absolute;
+    width: 176px;
+    height: 30px;
+    background-position: 0 -50px;
+    left: 613px;
+    top: -64px
+}
+
+.mar95 .wrapper_fresher_guide_try {
+    top: -83px
+}
+
+.wrapper_fresher_guide_try .guide_try_arrow {
+    position: absolute;
+    width: 42px;
+    height: 46px;
+    background-position: -138px -120px;
+    left: -18px;
+    top: -10px
+}
+
+.wrapper_fresher_guide_try .guide_try_close {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    background-position: -210px -130px;
+    right: -24px;
+    top: 0;
+    cursor: pointer
+}

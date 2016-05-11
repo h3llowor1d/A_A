@@ -1,0 +1,139 @@
+<div class="container jumbotron-zh">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">聊天</div>
+        </div>
+        <div id="chatDiv" class="panel-body" style="min-height: 400px">
+            ...
+        </div>
+        <div class="panel-footer">
+            <div class="form-group">
+                <input type="hidden" id="from_uid" value="1">
+                <select id="to_uid" class="form-control">
+                    <volist name="userList" id="item">
+                        <option value="{$item.id}">{$item.nickname}</option>
+                    </volist>
+                </select>
+                <textarea id="content" class="form-control"></textarea>
+                <a href="javascript:;" id="send" class="btn btn-info pull-right">发送</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   /* $(function(){
+        $("#send").bind("click",{
+                    btn:$("#send")
+                },
+                function(evdata){
+                    var from_uid = $("#from_uid").val(),
+                            to_uid = $("#to_uid").val(),
+                            content = $("#content").val();
+
+                    $.ajax({
+                        type    :"POST",
+                        dataType:"json",
+                        url     :"/Chat/get",
+                        timeout :80000,//ajax请求超时时间80秒
+                        data    :{
+                            from_uid:from_uid,
+                            to_uid:to_uid,
+                            content:content
+                        },
+                        //40秒后无论结果服务器都返回数据
+                        success :function(data,textStatus){
+                            //从服务器得到数据，显示数据并继续查询
+                            if(data.sendMsg == "1"){
+
+                                evdata.data.btn.click();
+                            }
+                            //未从服务器得到数据，继续查询
+                            if(data.success == "0"){
+                                evdata.data.btn.click();
+                            }
+                        },
+                        //Ajax请求超时，继续查询
+                        error   :function(XMLHttpRequest,textStatus,errorThrown){
+                            if(textStatus == "timeout"){
+                                $("#chatDiv").append("<br>[超时]");
+                                evdata.data.btn.click();
+                            }
+                        }
+                    });
+                });
+    });*/
+
+    $(function(){
+        var from_uid = $("#from_uid").val(),
+                to_uid = $("#to_uid").val(),
+                content = $("#content").val();
+
+        var getMessage = function(){
+            $.ajax({
+                type    :"POST",
+                dataType:"json",
+                url     :"/Chat/get",
+                timeout :10000,//ajax请求超时时间10秒
+                data    :{
+                    from_uid:from_uid,
+                    to_uid:to_uid
+                },
+                //80秒后无论结果服务器都返回数据
+                success :function(data,textStatus){
+                    //从服务器得到数据，显示数据并继续查询
+                    if(data.status == "1"){
+                        var messages = data.message;
+                        for(var i=0;i<messages.length;i++){
+                            $("#chatDiv").append("<br>"+messages[i]['message'] + "---" + messages[i]['addtime']);
+                        }
+                    }
+                    getMessage();
+
+                },
+                //Ajax请求超时，继续查询
+                error   :function(XMLHttpRequest,textStatus,errorThrown){
+                    if(textStatus == "timeout"){
+                        getMessage();
+                    }else{
+                        getMessage();
+                    }
+
+                }
+            });
+        }
+
+        var sendMessage = function(from,to,content){
+            $.ajax({
+                type:"POST",
+                dataType:"JSON",
+                url:"/Chat/post",
+                data :{
+                    from_uid:from,
+                    to_uid :to,
+                    content:content
+                },
+
+                success:function(data){
+                    if(data.status == "1"){
+                        $("#chatDiv").append("<br>我："+content+ "---" +new Date().getTime());
+                    }else{
+                        $("#chatDiv").append("<br>我：发送失败---" +new Date().getTime());
+                    }
+                },
+
+                error:function(XMLHttpRequest,textStatus,errorThrown){
+                    //$("#chatDiv").append("<br>我：发送失败---" +new Date().getTime());
+                }
+            });
+        }
+
+        getMessage();
+
+        $("#send").on('click',function(){
+            var from_uid = $("#from_uid").val(),
+                    to_uid = $("#to_uid").val(),
+                    content = $("#content").val();
+            sendMessage(from_uid,to_uid,content);
+        });
+    });
+</script>
